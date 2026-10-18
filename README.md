@@ -27,6 +27,9 @@ The proposed initial scope covers site mapping, soil observation records, and tr
 
 Automated machinery control, dedicated sensor hardware, and certification of regulatory compliance are outside the proposed initial scope. Final scope remains subject to requirements validation and supervisor review.
 
+Youtrack:https://242226.youtrack.cloud/agiles/204-1/current
+
+
 
 
 
