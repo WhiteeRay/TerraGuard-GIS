@@ -1,0 +1,184 @@
+:root{--space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;line-height:1.5}
+.sidebar{color:#c1d1c7}
+.sidebar nav a,.sidebar nav a:visited{color:#c1d1c7}
+.sidebar nav a.active,.sidebar nav a.active:visited{background:#355443;color:#f3f6e9;border-color:#4b6350}
+.sidebar nav a:hover{background:#2b4a3c;color:#fff}
+.brand-mark{color:#cadba8}
+.sidebar nav a.active svg{color:#d3e1aa}
+.workspace-label,.brand-sub{color:#a8c0b1}
+nav a{font-size:14px;line-height:1.5}
+nav a svg{color:#b2cbbb}
+.sidebar-bottom>p,.local-mode{color:#b5c9bb}
+.sidebar-bottom>strong{color:#edf4ea}
+.mission-icon{color:#cadba8}
+.sidebar .local-mode{font-size:12px}
+.workspace,#content,#content>div,.card,.monitor-layout>div,.overview-primary>*,.overview-secondary>*{min-width:0}
+.project-bar>div:first-child{min-width:0;max-width:100%}
+.project-select-wrap select{min-width:0;max-width:100%;font-size:18px;color:#202b26}
+.page-heading p{font-size:14px;line-height:1.7;color:#64736b;max-width:680px}
+h1{color:#202b26}
+.card-heading h2{font-size:17px;font-weight:600;color:#293e32;line-height:1.4}
+.card-heading p{font-size:12px;line-height:1.6;color:#64736b}
+.card-heading{padding:20px 22px;align-items:flex-start}
+.card{border-color:#e1e8e2;border-radius:8px}
+.button{font-size:13px;min-height:42px;padding:0 16px;line-height:1.4}
+.button-primary{background:#245c45;border-color:#245c45;color:#fff}
+.button-primary:hover{background:#173d30}
+.button-secondary{color:#315b43;border-color:#cdd9cf}
+.button-secondary:hover{background:#eef4ed;border-color:#adc4b2}
+.button:active{transform:translateY(1px)}
+button:disabled{opacity:.5;transform:none;cursor:not-allowed}
+.icon-button{min-width:36px;min-height:36px;color:#557261}
+.text-button{font-size:12px;min-height:32px;color:#245c45}
+button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #7fa792;outline-offset:3px}
+.kpi-card{padding:18px;display:grid;grid-template-rows:40px auto minmax(36px,auto)}
+.kpi-top{font-size:12px;color:#64736b;white-space:normal;gap:8px;line-height:1.5;align-items:flex-start}
+.kpi-top>span:first-child{min-width:0}
+.kpi-icon{height:27px;width:27px}
+.kpi-caption{font-size:12px;line-height:1.6;color:#64736b}
+.kpi-value{font-size:30px;color:#214b35;font-variant-numeric:tabular-nums}
+.conditions-overview{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px;margin-bottom:24px}
+.conditions-overview p{font-size:12px;color:#64736b;margin-top:6px;line-height:1.7}
+.condition-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.condition-values>div{display:grid;grid-template-columns:20px 1fr;column-gap:9px;row-gap:5px;min-width:0}
+.condition-values svg{width:17px;height:17px;color:#49785b;margin-top:3px}
+.condition-values span{font-size:12px;color:#64736b;white-space:nowrap}
+.condition-values strong{grid-column:2;font-size:22px;color:#214b35;font-weight:550;white-space:nowrap}
+.condition-values small{font-size:12px;font-weight:400;color:#64736b}
+.zone-list-item{padding:15px 20px;min-height:72px}
+.zone-list-info strong{font-size:13px;line-height:1.6;color:#334f3d}
+.zone-list-info>span{font-size:12px;color:#64736b}
+.zone-list-info{min-width:0}
+.zone-initial{height:34px;width:34px;font-size:12px}
+.restoration-progress{padding:20px}
+.restoration-progress>div:first-child,.restoration-progress p{font-size:12px;color:#64736b}
+.restoration-progress strong{font-size:13px;color:#245c45}
+.chart-wrap{height:265px}
+.feed-item{gap:12px;padding:15px 0}
+.feed-item strong{font-size:13px;line-height:1.6;color:#334f3d}
+.feed-item p{font-size:12px;line-height:1.6;color:#64736b}
+.feed-icon{width:32px;height:32px}
+.status-badge{font-size:11px;padding:5px 8px;line-height:1.6}
+.status-planned{color:#486478;background:#edf2f6}
+.status-stripping,.status-in_progress{color:#875d19;background:#faf3e4}
+.status-stored{color:#705b8c;background:#f1edf6}
+.status-restoring{color:#346c81;background:#eaf3f6}
+.status-restored,.status-completed{color:#2b7050;background:#eaf4ec}
+.attention-card{margin-top:24px}
+.attention-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #e1e8e2}
+.attention-zone{display:block;text-align:left;padding:20px 22px;min-width:0;border-right:1px solid #e1e8e2}
+.attention-zone:last-child{border-right:0}
+.attention-zone:hover{background:#f8faf6}
+.attention-zone>div{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.attention-zone strong{font-size:13px;font-weight:550;color:#334f3d;line-height:1.6}
+.attention-zone p{font-size:12px;color:#64736b;line-height:1.7;margin-top:10px}
+.severity-badge{display:inline-flex;font-size:11px;font-weight:500;color:#875d19;background:#faf0da;padding:3px 7px;border-radius:4px;white-space:nowrap}
+.severity-badge.critical,.critical .severity-badge{color:#9e3d33;background:#fae7e3}
+.gis-toolbar{padding:12px;gap:12px}
+.filter-pills{min-width:0;flex:1;gap:4px}
+.filter-pill{font-size:12px;min-height:36px;padding:8px 10px;color:#64736b}
+.filter-pill.active{color:#245c45;background:#edf4eb;border-color:#d9e6d5}
+.gis-workspace{min-height:640px}
+.zone-inspector h2{font-size:22px;font-weight:550;color:#202b26;line-height:1.45;overflow-wrap:anywhere}
+.inspector-section{padding:22px}
+.section-title{font-size:14px;font-weight:600;color:#293e32;line-height:1.5;gap:12px;margin-bottom:17px}
+.detail-list{margin:0 0 18px;font-size:12px}
+.detail-list>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px;padding:7px 0;line-height:1.7}
+.detail-list dt{color:#64736b}
+.detail-list dd{margin:0;text-align:right;color:#334f3d;overflow-wrap:anywhere}
+.detail-description>span{display:block;font-size:12px;color:#64736b;margin-bottom:7px}
+.detail-description p{font-size:13px;line-height:1.8;color:#334f3d;overflow-wrap:anywhere}
+.zone-metrics>div>span{font-size:12px;color:#64736b;line-height:1.7}
+.zone-metrics p,.metric-footnote{font-size:12px;line-height:1.7;color:#64736b}
+.volume-estimate span{font-size:12px;line-height:1.6;color:#64736b}
+.volume-estimate strong{font-size:26px;color:#245c45}
+.soil-mini-grid>div>span{font-size:11px;color:#64736b;line-height:1.5}
+.soil-mini-grid strong{font-size:22px;color:#245c45}
+.soil-mini-grid{gap:10px}
+.inspector-section .button{margin-top:8px}
+.warning-item{border-color:#ecd9b5;background:#fff9ed;padding:15px 13px;gap:9px}
+.warning-item>div{flex:1;min-width:0}
+.warning-heading{display:flex;align-items:flex-start;gap:8px;justify-content:space-between}
+.warning-item strong{font-size:13px;line-height:1.6;color:#805b21}
+.warning-item p{font-size:12px;line-height:1.8;color:#6f603f}
+.warning-item.critical{background:#fdf1ed;border-color:#efd7d0}
+.warning-item.critical strong{color:#9e3d33}
+.warning-item.critical p{color:#76564d}
+.rule-meta{margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-family:inherit;font-size:12px;color:#6f603f}
+.rule-meta dt{font-size:11px;color:#786b50;line-height:1.7}
+.rule-meta dd{font-size:12px;margin:3px 0 0;font-weight:500;line-height:1.7;overflow-wrap:anywhere}
+.recommendation{border-top:1px solid #d7c7ab;margin-top:14px;padding-top:12px}
+.recommendation strong{font-size:12px;font-weight:600}
+.analysis-disclaimer{font-size:11px;color:#64736b;line-height:1.8}
+.healthy-note{font-size:13px;color:#2d7050;background:#eff7ed;border-color:#d8e8d1}
+.insufficient-note{font-size:13px;color:#805b21}
+.evaluated-at{font-size:11px;color:#64736b}
+.filter-bar label{font-size:12px;color:#64736b;line-height:1.6}
+input,select,textarea{font-size:13px;line-height:1.6;color:#202b26;border-color:#cdd9cf;min-height:40px;max-width:100%}
+input::placeholder,textarea::placeholder{color:#75857a;opacity:1}
+.filter-bar select{font-size:13px}
+.filter-bar-note{font-size:12px;color:#64736b}
+.soil-card>div{font-size:13px;color:#64736b;gap:8px}
+.soil-card p{font-size:12px;line-height:1.7;color:#64736b}
+.soil-card>strong{font-size:30px;color:#245c45}
+.soil-card small{font-size:13px;color:#64736b}
+.monitoring-chart{height:315px}
+.metric-tab{font-size:12px;padding:7px 10px;color:#64736b}
+.metric-tab.active{color:#245c45}
+.table-scroll{width:100%;min-width:0;overscroll-behavior-x:contain}
+table{font-size:13px}
+th{font-size:12px;color:#64736b;font-weight:500;padding:14px 18px;background:#f5f8f3}
+td{font-size:13px;line-height:1.7;padding:16px 18px;color:#334f3d}
+.activities-table td:first-child{min-width:210px;max-width:280px}
+.activities-table td>strong{font-size:13px;color:#334f3d}
+.table-subtitle{font-size:12px;line-height:1.7;color:#64736b;max-width:260px}
+.source-tag{font-size:11px;color:#526b59;max-width:180px;display:inline-block}
+.table-footer,.card-bottom-note{font-size:12px;line-height:1.7;color:#64736b}
+.record-actions{display:flex;gap:10px;align-items:flex-start}
+.record-details{white-space:normal;min-width:66px;font-size:12px;line-height:1.7}
+.record-details summary{cursor:pointer;color:#245c45;padding:7px 0;white-space:nowrap}
+.record-details[open]{width:230px}
+.record-details dl{margin:8px 0;padding:12px;background:#f7f9f4;border-radius:5px;max-width:100%;overflow-wrap:anywhere}
+.record-details dt{font-size:11px;color:#64736b;margin-top:9px}
+.record-details dt:first-child{margin-top:0}
+.record-details dd{font-size:12px;color:#334f3d;margin:3px 0 0}
+.activity-filters{flex-wrap:wrap}
+.activity-filters select{font-size:12px;min-width:135px;flex:1;max-width:230px}
+.search-field{min-width:190px}
+.search-field input{font-size:12px;height:40px}
+.search-field svg{top:13px}
+.activity-summary-card>div>span{font-size:13px;color:#64736b}
+.activity-summary-card small{font-size:12px;color:#64736b}
+.workflow-note h3{font-size:14px;color:#355e42}
+.workflow-note p{font-size:12px;color:#64736b}
+dialog{color:#202b26;border-color:#d6e1d7}
+.dialog-heading h2{font-size:24px;color:#202b26}
+.dialog-description{font-size:13px;color:#64736b;line-height:1.8}
+.form-fields{gap:24px}
+.form-section{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px;border:0;margin:0;padding:0;min-width:0}
+.form-section legend{font-size:14px;font-weight:600;color:#293e32;padding:0 0 16px;width:100%}
+.form-fields label{font-size:13px;font-weight:450;color:#334f3d;gap:8px;line-height:1.5;min-width:0}
+.form-fields input,.form-fields select,.form-fields textarea{font-size:14px;color:#202b26;padding:10px 12px}
+.field-hint{font-size:11px;color:#64736b}
+.form-note{font-size:12px;line-height:1.8;color:#64736b}
+.form-error{font-size:13px;line-height:1.8;color:#9e3d33;background:#fdf1ed;border-color:#efd7d0}
+[aria-invalid=true]{border-color:#c95b50!important}
+.toast{font-size:13px;line-height:1.7}
+.empty-state strong{font-size:16px;color:#315b43}
+.empty-state p,.error-state p{font-size:14px;color:#64736b}
+.loading-state{font-size:14px;color:#64736b}
+.page-footer{font-size:11px;color:#64736b;flex-wrap:wrap}
+.menu-backdrop{position:fixed;inset:0;background:#173d3045;z-index:1050}
+.leaflet-interactive:focus-visible{outline:3px solid #245c45;outline-offset:4px}
+.leaflet-tooltip.zone-label{font-size:11px;font-weight:500;color:#245c45;padding:5px 8px}
+.leaflet-control-attribution{font-size:10px!important}
+.leaflet-control-zoom a{width:34px!important;height:34px!important;line-height:34px!important;font-size:22px!important}
+.tile-notice{font-size:11px;color:#64736b;max-width:calc(100% - 125px)}
+.map-overlay-label{font-size:12px;color:#245c45;gap:8px;max-width:calc(100% - 34px)}
+.map-overlay-label>span{font-size:11px;white-space:nowrap}
+.map-coordinate{font-size:11px;color:#526b59}
+.drawing-banner,.geometry-actions{font-size:13px;line-height:1.7;color:#315b43;flex-wrap:wrap}
+@media(max-width:1350px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.conditions-overview{align-items:flex-start;flex-direction:column}.condition-values{width:100%;gap:24px}.overview-primary{grid-template-columns:minmax(0,1.3fr) minmax(300px,1fr)}.overview-secondary{grid-template-columns:1fr}.activity-feed{display:block}.monitoring-chart-card .card-heading{flex-direction:column;align-items:flex-start}.filter-bar-note{display:none}}
+@media(max-width:1023px){.sidebar{width:254px;padding:28px 18px 0}.sidebar nav a{font-size:14px;padding:14px 12px}.sidebar-bottom>p{font-size:12px}.workspace{width:100%;margin:0}.sidebar-bottom>strong{font-size:18px}.mobile-menu{display:inline-grid!important}.overview-primary{grid-template-columns:1fr}.zone-list{grid-template-columns:1fr 1fr}.zone-list-item{padding:16px}.gis-workspace{grid-template-columns:1fr;min-height:0;height:auto;max-height:none}.gis-map-wrap{height:470px}.zone-inspector{border-left:0;border-top:1px solid #e1e8e2}.monitor-layout{grid-template-columns:1fr}.analysis-content{display:block}.analysis-content .warning-item{margin-bottom:14px}.filter-bar label:first-child{min-width:0;flex:2}.filter-bar select{min-width:0}.filter-bar label{min-width:0}.attention-list{grid-template-columns:1fr}.attention-zone{border-right:0;border-bottom:1px solid #e1e8e2}.attention-zone:last-child{border-bottom:0}.breadcrumb{font-size:12px}.breadcrumb strong{font-size:12px}.project-select-wrap select{font-size:17px}.topbar-end{gap:12px}.demo-badge{font-size:11px}.card-heading h2{font-size:17px}.soil-card p{font-size:12px}.activity-summary-card small{font-size:11px}.page-heading>.button{font-size:13px;padding:0 14px;min-height:42px}.project-bar{padding:22px 0}.card-bottom-note{font-size:11px}}
+@media(max-width:767px){.secondary-column{display:none}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-card{padding:16px}.kpi-value{font-size:28px}.kpi-top{font-size:12px;min-height:40px}.kpi-caption{font-size:11px}.zone-list{grid-template-columns:1fr}.conditions-overview{padding:18px}.condition-values{gap:14px}.condition-values>div{display:flex;flex-direction:column;gap:5px}.condition-values strong{font-size:22px}.condition-values span{font-size:11px;white-space:normal}.condition-values small{font-size:12px}.page-heading{flex-wrap:wrap}.page-heading h1{font-size:28px}.page-heading p{font-size:13px}.page-heading>.button{margin-top:8px}.card-heading{padding:18px;flex-wrap:wrap}.chart-legend{font-size:11px}.overview-map{height:320px}.gis-map-wrap{height:420px}.filter-pill{font-size:12px;padding:8px 10px}.gis-toolbar{padding:10px 8px}.soil-card-grid{gap:10px}.soil-card{padding:16px 12px}.soil-card>div{font-size:12px;flex-wrap:wrap}.soil-card p{font-size:11px}.soil-card>strong{font-size:26px}.soil-card small{font-size:12px}.analysis-content{padding:18px}.filter-bar{align-items:stretch;flex-direction:column;gap:16px}.filter-bar label{font-size:12px}.activity-summary{gap:10px}.activity-summary-card{padding:16px;flex-direction:column;gap:10px}.activity-summary-card>div>span{font-size:12px}.activity-summary-card small{font-size:11px}.activity-filters select{min-width:140px;max-width:none}.search-field{min-width:100%}.card-heading .text-button{font-size:12px}.page-footer{font-size:11px}.dialog-heading{padding:22px 20px 0}.dialog-description{padding:14px 20px 22px}.form-fields{padding:0 20px 22px}.dialog-heading h2{font-size:22px}.form-fields input,.form-fields select,.form-fields textarea{font-size:16px}.form-fields label{font-size:13px}.map-coordinate{font-size:10px}.inline-legend{font-size:11px;gap:12px}.map-crs{display:none}.map-card-footer{height:auto;min-height:48px;padding:12px 16px}.status-badge{font-size:11px}.record-details[open]{width:210px}}
+@media(max-width:479px){main{padding:0 16px}.topbar{padding:0 12px}.topbar-start{gap:6px;min-width:0}.breadcrumb>strong{max-width:155px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.topbar-end{gap:8px}.avatar{display:none}.demo-badge{font-size:10px;white-space:nowrap}.project-select-wrap select{font-size:16px;max-width:100%}.project-select-wrap{min-width:0}.eyebrow,.page-heading .eyebrow{font-size:11px;letter-spacing:1.4px}.kpi-card{padding:14px}.kpi-top{gap:5px}.kpi-icon{height:23px;width:23px}.kpi-top>span:first-child{font-size:11px}.kpi-value{font-size:26px}.kpi-value>span{font-size:12px}.card-heading h2{font-size:16px}.chart-wrap{height:270px;padding:6px 12px 12px}.condition-values{gap:10px}.condition-values strong{font-size:21px}.attention-zone{padding:18px}.gis-map-wrap{height:390px}.map-overlay-label{font-size:11px;padding:10px;left:12px;top:12px}.map-overlay-label>span{display:none}.soil-card-grid{grid-template-columns:1fr}.soil-card{padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.soil-card>strong{grid-column:2;grid-row:1/3;text-align:right;margin:0;align-self:center;font-size:29px}.soil-card>div{font-size:13px;justify-content:flex-start;gap:9px}.soil-card p{font-size:11px;line-height:1.7;margin:0}.soil-card>div svg{width:14px;height:14px}.form-section{grid-template-columns:1fr;gap:18px}.form-section .full{grid-column:1}.form-note{font-size:12px}.dialog-footer{padding:16px 20px}.dialog-footer .button{font-size:13px}.rule-meta{gap:8px}.warning-heading{flex-wrap:wrap}.workflow-note{align-items:flex-start}.workflow-note p{font-size:12px}.activity-summary-card{padding:13px}.activity-summary-card>div>span{font-size:11px}.activity-summary-card strong{font-size:25px}.activity-summary-card small{font-size:10px}.feed-item{flex-wrap:wrap}.feed-item .status-badge{margin-left:44px;font-size:11px}.metric-tabs{flex-wrap:wrap;gap:3px}.metric-tab{font-size:11px;padding:8px}.table-scroll th,.table-scroll td{padding-left:14px;padding-right:14px}.detail-list>div{gap:12px}.map-coordinate{font-size:10px}.map-coordinate svg{display:none}.tile-notice{left:12px;bottom:47px;max-width:calc(100% - 24px)}.drawing-banner,.geometry-actions{left:12px;right:12px;font-size:12px}.geometry-actions>span{flex-basis:100%}}
