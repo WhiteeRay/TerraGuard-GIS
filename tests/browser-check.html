@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TerraGuard responsive checks</title>
+  <style>
+    *{box-sizing:border-box}body{font:14px/1.6 system-ui;margin:0;background:#edf2ed;color:#202b26;padding:20px}header{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:16px}h1{font-size:19px;margin:0 auto 0 0}button,select{font:inherit;padding:8px 12px;border:1px solid #bacfbd;border-radius:5px;background:white;color:#245c45}button{cursor:pointer}#run{background:#245c45;color:white}#status{font-size:14px;margin:12px 0}#shell{background:#fff;border:1px solid #bacfbd;margin:0 auto;overflow:hidden}iframe{border:0;display:block;transform-origin:top left}table{border-collapse:collapse;width:100%;margin:16px 0;background:white}th,td{text-align:left;padding:8px 12px;border:1px solid #d7e1d8;font-size:12px}th{background:#e3ebe2}.fail{color:#9e3d33}.pass{color:#245c45}
+  </style>
+</head>
+<body>
+  <header><h1>TerraGuard layout verification</h1><label>Viewport <select id="width"><option>1440</option><option>1280</option><option>1024</option><option>768</option><option>390</option></select></label><label>Section <select id="route"><option value="overview">Overview</option><option value="map">GIS Map</option><option value="monitoring">Soil Monitoring</option><option value="restoration">Preservation & Restoration</option></select></label><button id="preview">Preview</button><button id="run">Check All Layouts</button></header>
+  <p id="status" role="status">Preview uses the actual application and database.</p>
+  <div id="shell"><iframe id="frame" title="TerraGuard actual viewport preview"></iframe></div>
+  <table id="results" hidden><thead><tr><th>Viewport</th><th>Section</th><th>Actual Width</th><th>Page Width</th><th>English UI</th><th>Result</th></tr></thead><tbody></tbody></table>
+  <script type="module">
+    const frame=document.querySelector('#frame');
+    const width=document.querySelector('#width');
+    const route=document.querySelector('#route');
+    const status=document.querySelector('#status');
+    const results=document.querySelector('#results');
+    let count=0;
+    function resize(value){
+      const scale=Math.min(1,(document.documentElement.clientWidth-44)/value);
+      frame.style.width=`${value}px`;
+      frame.style.height='900px';
+      frame.style.transform=`scale(${scale})`;
+      document.querySelector('#shell').style.width=`${value*scale}px`;
+      document.querySelector('#shell').style.height=`${900*scale}px`;
+    }
+    async function load(value,section){
+      resize(value);
+      const marker=String(++count);
+      frame.src=`/?layout-check=${marker}#${section}`;
+      const deadline=Date.now()+15000;
+      while(Date.now()<deadline){
+        const doc=frame.contentDocument;
+        if(frame.contentWindow.location.search===`?layout-check=${marker}`&&doc.querySelector('#content h1')&&!doc.querySelector('.loading-state'))break;
+        if(frame.contentWindow.location.search===`?layout-check=${marker}`&&doc.querySelector('.error-state'))throw new Error('Application returned an error state.');
+        await new Promise((resolve)=>setTimeout(resolve,100));
+      }
+      await Promise.race([frame.contentDocument.fonts.ready,new Promise((resolve)=>setTimeout(resolve,1500))]);
+      frame.contentDocument.body.getBoundingClientRect();
+    }
+    document.querySelector('#preview').onclick=async()=>{
+      await load(Number(width.value),route.value);
+      status.textContent=`Preview: ${width.value}px · ${route.options[route.selectedIndex].text}`;
+    };
+    document.querySelector('#run').onclick=async(event)=>{
+      event.currentTarget.disabled=true;
+      results.hidden=false;
+      results.querySelector('tbody').replaceChildren();
+      let passed=0;
+      try{
+        for(const size of [1440,1280,1024,768,390]){
+          for(const section of ['overview','map','monitoring','restoration']){
+            status.textContent=`Checking ${size}px · ${section}…`;
+            await load(size,section);
+            const doc=frame.contentDocument;
+            const actual=doc.documentElement.clientWidth;
+            const pageWidth=doc.documentElement.scrollWidth;
+            const english=!/[А-Яа-яЁё]/.test(doc.querySelector('main').innerText);
+            const valid=actual===size&&pageWidth<=size+1&&english&&!doc.querySelector('.error-state');
+            if(valid)passed++;
+            const row=document.createElement('tr');
+            row.className=valid?'pass':'fail';
+            for(const value of [size,section,actual,pageWidth,english?'Pass':'Fail',valid?'Pass':'Fail']){const cell=document.createElement('td');cell.textContent=value;row.append(cell);}
+            results.querySelector('tbody').append(row);
+          }
+        }
+        status.textContent=`Completed: ${passed}/20 viewport and section checks passed.`;
+      }catch(error){status.textContent=error.message;}
+      finally{document.querySelector('#run').disabled=false;}
+    };
+    window.addEventListener('resize',()=>resize(Number(width.value)));
+    await load(1440,'overview');
+  </script>
+</body>
+</html>
