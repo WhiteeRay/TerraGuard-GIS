@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring" version="32.5.5">
+  <diagram id="03-current-erd" name="TerraGuard GIS — Current Database ER Diagram">
+    <mxGraphModel dx="1840" dy="1340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="1340" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="TerraGuard GIS — Current Database ER Diagram" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="24" width="1760" height="42" />
+        </mxCell>
+        <mxCell id="status" value="CURRENT DATABASE SCHEMA" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="82" width="310" height="30" />
+        </mxCell>
+        <mxCell id="subtitle" value="Four domain tables • migrations 001_initial.sql + 002_monitoring_attributes.sql • crow’s-foot cardinalities" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="122" width="1760" height="32" />
+        </mxCell>
+        <mxCell id="footer" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1306" width="1760" height="22" />
+        </mxCell>
+        <mxCell id="projects" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="200" width="500" height="222" />
+        </mxCell>
+        <mxCell id="projects-head" value="projects" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=21;fontColor=#FFFFFF;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="200" width="500" height="48" />
+        </mxCell>
+        <mxCell id="projects-0" value="PK  id : integer IDENTITY" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="248" width="500" height="29" />
+        </mxCell>
+        <mxCell id="projects-1" value="name : varchar(160) NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="277" width="500" height="29" />
+        </mxCell>
+        <mxCell id="projects-2" value="description : text NN DEFAULT ''" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="306" width="500" height="29" />
+        </mxCell>
+        <mxCell id="projects-3" value="location : varchar(160) NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="335" width="500" height="29" />
+        </mxCell>
+        <mxCell id="projects-4" value="is_demo : boolean NN DEFAULT true" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="364" width="500" height="29" />
+        </mxCell>
+        <mxCell id="projects-5" value="created_at : timestamptz NN DEFAULT now()" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="393" width="500" height="29" />
+        </mxCell>
+        <mxCell id="zones" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="200" width="590" height="541" />
+        </mxCell>
+        <mxCell id="zones-head" value="zones" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=21;fontColor=#FFFFFF;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="200" width="590" height="48" />
+        </mxCell>
+        <mxCell id="zones-0" value="PK  id : integer IDENTITY" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="248" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-1" value="FK  project_id : integer NN → projects.id" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="277" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-2" value="name : varchar(160) NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="306" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-3" value="status : varchar(20) NN DEFAULT 'planned'" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="335" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-4" value="topsoil_depth_cm : double precision NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="364" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-5" value="geom : geometry(Polygon, 4326) NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="393" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-6" value="created_at : timestamptz NN DEFAULT now()" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="422" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-7" value="updated_at : timestamptz NN DEFAULT now()" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="451" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-8" value="soil_type : varchar(80)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="480" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-9" value="description : text" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="509" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-10" value="survey_date : date" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="538" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-11" value="UNIQUE (id, project_id)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="567" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-12" value="status ∈ planned, stripping, stored, restoring, restored" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="596" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-13" value="0 &lt; topsoil_depth_cm ≤ 300" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="625" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-14" value="ST_IsValid(geom) AND NOT ST_IsEmpty(geom)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="654" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-15" value="0 &lt; ST_Area(geom::geography) ≤ 10¹⁰ m²" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="683" width="590" height="29" />
+        </mxCell>
+        <mxCell id="zones-16" value="description length ≤ 2000; survey_date: 2000–2100" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="712" width="590" height="29" />
+        </mxCell>
+        <mxCell id="measurements" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="200" width="420" height="454" />
+        </mxCell>
+        <mxCell id="measurements-head" value="soil_measurements" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=21;fontColor=#FFFFFF;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="200" width="420" height="48" />
+        </mxCell>
+        <mxCell id="measurements-0" value="PK  id : integer IDENTITY" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="248" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-1" value="FK  zone_id : integer NN → zones.id" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="277" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-2" value="moisture : double precision NN [0,100]" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="306" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-3" value="temperature : double precision NN [−60,80]" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="335" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-4" value="ph : double precision NN [0,14]" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="364" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-5" value="measured_at : timestamptz NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="393" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-6" value="source : varchar(120) NN; nonblank" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="422" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-7" value="created_at : timestamptz NN DEFAULT now()" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="451" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-8" value="sampling_depth_cm : double precision (0,300]" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="480" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-9" value="measurement_source : varchar(120) GEN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="509" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-10" value="recorded_by : varchar(120)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="538" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-11" value="notes : text; length ≤ 2000" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="567" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-12" value="updated_at : timestamptz NN DEFAULT now()" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="596" width="420" height="29" />
+        </mxCell>
+        <mxCell id="measurements-13" value="GEN measurement_source = source (stored)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1380" y="625" width="420" height="29" />
+        </mxCell>
+        <mxCell id="activities" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="850" width="1120" height="280" />
+        </mxCell>
+        <mxCell id="activities-head" value="activities" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=21;fontColor=#FFFFFF;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="850" width="1120" height="48" />
+        </mxCell>
+        <mxCell id="activities-0" value="PK  id : integer IDENTITY; project_id : integer NN FK → projects.id; zone_id : integer NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="898" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-1" value="type : varchar(20) NN ∈ stripping, movement, storage, reuse, restoration" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="927" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-2" value="status : varchar(20) NN ∈ planned, in_progress, completed; occurred_at : timestamptz NN" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="956" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-3" value="planned_volume_m3 : double precision [0,10¹⁰]; actual_volume_m3 : double precision [0,10¹⁰]" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="985" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-4" value="note : text NN DEFAULT ''; notes : text GEN AS (note) STORED" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1014" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-5" value="created_at, updated_at : timestamptz NN DEFAULT now(); responsible_person : varchar(120)" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1043" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-6" value="planned_date, completed_date : date CHECK 2000-01-01 … 2100-12-31" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F1F6F3;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1072" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="activities-7" value="FK (zone_id, project_id) → zones(id, project_id) ON DELETE CASCADE" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#FFFFFF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;spacingLeft=12;spacing=4;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1101" width="1120" height="29" />
+        </mxCell>
+        <mxCell id="p-z" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.35;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;startArrow=ERmandOne;startSize=16;endArrow=ERzeroToMany;endSize=20;startFill=0;endFill=0;" edge="1" parent="1" source="projects" target="zones">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="z-m" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=ERmandOne;startSize=16;endArrow=ERzeroToMany;endSize=20;startFill=0;endFill=0;" edge="1" parent="1" source="zones" target="measurements">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="z-a" value="has • project-consistent composite FK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.55;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;startArrow=ERmandOne;startSize=16;endArrow=ERzeroToMany;endSize=20;startFill=0;endFill=0;" edge="1" parent="1" source="zones" target="activities">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="p-a" value="has" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;startArrow=ERmandOne;startSize=16;endArrow=ERzeroToMany;endSize=20;startFill=0;endFill=0;edgeStyle=segmentEdgeStyle;" edge="1" parent="1" source="projects" target="activities">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="290" y="934" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="RELATIONSHIP KEY&#10;Each child references exactly one parent.&#10;Each parent may have zero or many children.&#10;All domain foreign keys use ON DELETE CASCADE.&#10;&#10;COLUMN KEY&#10;PK = primary key; FK = foreign key&#10;NN = NOT NULL; unmarked columns allow NULL&#10;GEN = generated column; IDENTITY columns are NN." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1010" width="570" height="270" />
+        </mxCell>
+        <mxCell id="erd-notes" value="SCHEMA NOTES&#10;Composite activity FK prevents a zone from another project being referenced. GiST index supports zone geometry; other indexes support project/date and measurement history reads. Area and layer volume are query results, not stored columns.&#10;&#10;The migration runner also creates schema_migrations(name PK, applied_at). It is an operational ledger, outside the four domain tables. No users, sensors, soil batches, rule versions or attachment tables exist in this schema." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1175" width="1120" height="105" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

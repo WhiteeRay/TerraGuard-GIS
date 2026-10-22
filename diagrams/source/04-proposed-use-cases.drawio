@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring" version="32.5.5">
+  <diagram id="04-proposed-use-cases" name="TerraGuard GIS — Proposed Use Cases">
+    <mxGraphModel dx="1700" dy="1190" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1190" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="TerraGuard GIS — Proposed Use Cases" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="24" width="1620" height="42" />
+        </mxCell>
+        <mxCell id="status" value="PROPOSED FUNCTIONAL REQUIREMENTS" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="82" width="348" height="30" />
+        </mxCell>
+        <mxCell id="subtitle" value="Report §7.2 • domain responsibilities are provisional; permission roles and site membership are agreed separately." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="122" width="1620" height="32" />
+        </mxCell>
+        <mxCell id="footer" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1156" width="1620" height="22" />
+        </mxCell>
+        <mxCell id="boundary" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="185" width="1350" height="900" />
+        </mxCell>
+        <mxCell id="boundary-label" value="TerraGuard GIS  /  Proposed application boundary" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="318" y="195" width="1314" height="28" />
+        </mxCell>
+        <mxCell id="env" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#FFFFFF;strokeColor=#173F35;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="106" y="270" width="56" height="76" />
+        </mxCell>
+        <mxCell id="env-name" value="Environmental Specialist" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="350" width="210" height="40" />
+        </mxCell>
+        <mxCell id="manager" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#FFFFFF;strokeColor=#173F35;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="106" y="570" width="56" height="76" />
+        </mxCell>
+        <mxCell id="manager-name" value="Construction Site Manager" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="650" width="210" height="40" />
+        </mxCell>
+        <mxCell id="soil" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#FFFFFF;strokeColor=#173F35;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="106" y="835" width="56" height="76" />
+        </mxCell>
+        <mxCell id="soil-name" value="Soil Specialist" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="915" width="210" height="40" />
+        </mxCell>
+        <mxCell id="admin" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=0;fillColor=#FFFFFF;strokeColor=#173F35;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="106" y="1035" width="56" height="76" />
+        </mxCell>
+        <mxCell id="admin-name" value="System Administrator" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="30" y="1115" width="210" height="40" />
+        </mxCell>
+        <mxCell id="role-env" value="Observation and reporting" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="247" width="1200" height="28" />
+        </mxCell>
+        <mxCell id="uc-env0" value="View GIS map" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="345" y="280" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-env0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="env" target="uc-env0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="308" />
+              <mxPoint x="260" y="412" />
+              <mxPoint x="482.5" y="412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-env1" value="Enter soil observations" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="280" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-env1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="env" target="uc-env1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="308" />
+              <mxPoint x="260" y="412" />
+              <mxPoint x="797.5" y="412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-env2" value="Import observations&#10;from CSV" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="975" y="280" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-env2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="env" target="uc-env2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="308" />
+              <mxPoint x="260" y="412" />
+              <mxPoint x="1112.5" y="412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-env3" value="Export monitoring&#10;reports" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1290" y="280" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-env3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="env" target="uc-env3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="308" />
+              <mxPoint x="260" y="412" />
+              <mxPoint x="1427.5" y="412" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role-manager" value="Site and material management" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="432" width="1200" height="28" />
+        </mxCell>
+        <mxCell id="uc-manager0" value="Register site and&#10;sampling areas" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="345" y="465" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-manager0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="manager" target="uc-manager0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="608" />
+              <mxPoint x="260" y="597" />
+              <mxPoint x="482.5" y="597" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-manager1" value="Track topsoil removal&#10;and storage" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="465" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-manager1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="manager" target="uc-manager1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="608" />
+              <mxPoint x="260" y="597" />
+              <mxPoint x="797.5" y="597" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-manager2" value="Track soil movement&#10;and reuse" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="975" y="465" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-manager2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="manager" target="uc-manager2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="608" />
+              <mxPoint x="260" y="597" />
+              <mxPoint x="1112.5" y="597" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-manager3" value="Calculate estimated&#10;soil volume" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1290" y="465" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-manager3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="manager" target="uc-manager3">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="608" />
+              <mxPoint x="260" y="597" />
+              <mxPoint x="1427.5" y="597" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role-soil" value="Review and restoration" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="682" width="1200" height="28" />
+        </mxCell>
+        <mxCell id="uc-soil0" value="Review measurement&#10;history" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="345" y="715" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-soil0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="soil" target="uc-soil0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="873" />
+              <mxPoint x="260" y="847" />
+              <mxPoint x="482.5" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-soil1" value="Record restoration&#10;activities" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="715" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-soil1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="soil" target="uc-soil1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="873" />
+              <mxPoint x="260" y="847" />
+              <mxPoint x="797.5" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-soil2" value="Review explainable&#10;alerts" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="975" y="715" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-soil2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="soil" target="uc-soil2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="873" />
+              <mxPoint x="260" y="847" />
+              <mxPoint x="1112.5" y="847" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="role-admin" value="Administration" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="912" width="1200" height="28" />
+        </mxCell>
+        <mxCell id="uc-admin0" value="Manage users&#10;and permissions" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="345" y="945" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-admin0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="admin" target="uc-admin0">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="1073" />
+              <mxPoint x="260" y="1077" />
+              <mxPoint x="482.5" y="1077" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uc-admin1" value="Review audit history" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=12;shape=ellipse;perimeter=ellipsePerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="945" width="275" height="86" />
+        </mxCell>
+        <mxCell id="assoc-uc-admin1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;strokeWidth=1.3;" edge="1" parent="1" source="admin" target="uc-admin1">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="260" y="1073" />
+              <mxPoint x="260" y="1077" />
+              <mxPoint x="797.5" y="1077" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="use-note" value="Representative associations only. Environmental and soil specialists may hold viewer or editor access. A manager may hold editor access. Administrator controls membership and approved rule versions. These use cases are requirements, not implementation evidence." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="1103" width="1350" height="45" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

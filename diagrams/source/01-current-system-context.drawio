@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring" version="32.5.5">
+  <diagram id="01-current-system-context" name="TerraGuard GIS — Current System Context">
+    <mxGraphModel dx="1680" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1680" pageHeight="1020" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="TerraGuard GIS — Current System Context" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="24" width="1600" height="42" />
+        </mxCell>
+        <mxCell id="status" value="CURRENT IMPLEMENTATION" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="82" width="310" height="30" />
+        </mxCell>
+        <mxCell id="subtitle" value="Working local prototype • synthetic records • no active sensor or laboratory integration" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="122" width="1600" height="32" />
+        </mxCell>
+        <mxCell id="footer" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="986" width="1600" height="22" />
+        </mxCell>
+        <mxCell id="user" value="Demo application user&#10;Views and edits demonstration records" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="370" width="270" height="130" />
+        </mxCell>
+        <mxCell id="browser" value="Web browser&#10;Renders client assets; runs JavaScript" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="420" y="370" width="290" height="130" />
+        </mxCell>
+        <mxCell id="system" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="820" y="190" width="810" height="660" />
+        </mxCell>
+        <mxCell id="system-label" value="TerraGuard GIS  /  Application system boundary" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="838" y="200" width="774" height="28" />
+        </mxCell>
+        <mxCell id="frontend" value="TerraGuard GIS frontend&#10;Vanilla JavaScript • Leaflet • Chart.js" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="875" y="255" width="690" height="110" />
+        </mxCell>
+        <mxCell id="api" value="Express REST API&#10;Validation • repositories • demo rules" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="875" y="470" width="690" height="110" />
+        </mxCell>
+        <mxCell id="db" value="PostgreSQL / PostGIS database&#10;Projects • zones • measurements • activities" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="875" y="690" width="690" height="110" />
+        </mxCell>
+        <mxCell id="osm" value="OpenStreetMap basemap service&#10;EXTERNAL • map tile images" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#526B65;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="420" y="670" width="290" height="130" />
+        </mxCell>
+        <mxCell id="seed" value="Synthetic demonstration data&#10;SQL fixture • local input" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#526B65;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="875" y="885" width="690" height="66" />
+        </mxCell>
+        <mxCell id="user-browser" value="interact / view" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="user" target="browser">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="client-load" value="load HTML / CSS / JS&#10;execute frontend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="browser" target="frontend">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="760" y="396" />
+              <mxPoint x="760" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="front-api" value="/api • REST / JSON&#10;GeoJSON, observations, activities" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="frontend" target="api">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="api-db" value="pg • parameterized SQL / query results" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="api" target="db">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="tiles" value="HTTPS tile request / PNG response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="browser" target="osm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="seed-db" value="migration / seed initialisation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="seed" target="db">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="scope" value="CURRENT SCOPE&#10;A local demonstration with manually entered or seeded data. Application container serves frontend assets and /api. Basemap images supply geographic context, not soil measurements." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="190" width="670" height="105" />
+        </mxCell>
+        <mxCell id="baseline" value="Source baseline: matching application modules and migrations in local archive and main f1fa448. Runtime packaging exists in the supplied local project; the GitHub checkout is incomplete." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="885" width="670" height="66" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

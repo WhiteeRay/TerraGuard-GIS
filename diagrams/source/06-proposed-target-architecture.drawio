@@ -1,0 +1,164 @@
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring">
+  <diagram id="06-proposed-target-architecture" name="TerraGuard GIS — Proposed Target Architecture">
+    <mxGraphModel dx="2142" dy="1482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="1470" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" value="TerraGuard GIS — Proposed Target Architecture" vertex="1">
+          <mxGeometry height="42" width="1760" x="40" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="status" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" value="PROPOSED ARCHITECTURE — NOT FULLY IMPLEMENTED" vertex="1">
+          <mxGeometry height="30" width="465" x="40" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" value="Report §§7.1–7.7 and implementation plan §3 • one deployable backend with separate internal modules" vertex="1">
+          <mxGeometry height="32" width="1760" x="40" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" vertex="1">
+          <mxGeometry height="22" width="1760" x="40" y="1436" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=20;fontColor=#203A36;fontStyle=1;spacing=12;" value="Existing browser baseline&#xa;Vite • Vanilla JavaScript • Leaflet / Draw • Chart.js" vertex="1">
+          <mxGeometry height="75" width="1760" x="40" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="api-boundary" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" value="" vertex="1">
+          <mxGeometry height="780" width="1760" x="40" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="api-boundary-label" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" value="ONE BACKEND APPLICATION  /  Existing Node.js + Express baseline" vertex="1">
+          <mxGeometry height="28" width="1724" x="58" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" value="Existing /api routes + request validation&#xa;Extend the existing API for the proposed workflow" vertex="1">
+          <mxGeometry height="70" width="1660" x="90" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="browser-api" edge="1" parent="1" source="browser" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" target="api" value="REST / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="access" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;dashed=1;dashPattern=8 5;" value="Role-based access control + site membership&#xa;Permission check before every protected action" vertex="1">
+          <mxGeometry height="66" width="1660" x="90" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="api-access" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="access" value="proposed permission gate">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="current" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" value="" vertex="1">
+          <mxGeometry height="320" width="460" x="90" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="current-label" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" value="Existing domain modules" vertex="1">
+          <mxGeometry height="28" width="424" x="108" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="spatial" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" value="Projects + zones / spatial calculations" vertex="1">
+          <mxGeometry height="47" width="420" x="110" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="obs" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" value="Measurements / basic history" vertex="1">
+          <mxGeometry height="47" width="420" x="110" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="activity" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" value="Activity log / restoration view" vertex="1">
+          <mxGeometry height="47" width="420" x="110" y="814" as="geometry" />
+        </mxCell>
+        <mxCell id="rules" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" value="Demo analysis + summary services" vertex="1">
+          <mxGeometry height="47" width="420" x="110" y="877" as="geometry" />
+        </mxCell>
+        <mxCell id="domain" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="" vertex="1">
+          <mxGeometry height="320" width="610" x="610" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-label" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" value="Planned domain capabilities" vertex="1">
+          <mxGeometry height="28" width="574" x="628" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="sampling" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Sampling locations + contextualized observations" vertex="1">
+          <mxGeometry height="47" width="570" x="630" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="csv" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="CSV import, preview and validation" vertex="1">
+          <mxGeometry height="47" width="570" x="630" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="batch" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Identifiable soil batches + transactional operations" vertex="1">
+          <mxGeometry height="47" width="570" x="630" y="814" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Storage records + restoration records" vertex="1">
+          <mxGeometry height="47" width="570" x="630" y="877" as="geometry" />
+        </mxCell>
+        <mxCell id="assurance" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="" vertex="1">
+          <mxGeometry height="320" width="470" x="1280" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="assurance-label" parent="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" value="Planned evidence and decisions" vertex="1">
+          <mxGeometry height="28" width="434" x="1298" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="version" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Versioned rule-based decision support" vertex="1">
+          <mxGeometry height="47" width="430" x="1300" y="688" as="geometry" />
+        </mxCell>
+        <mxCell id="alerts" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Alerts + explanations; preserve input/version" vertex="1">
+          <mxGeometry height="47" width="430" x="1300" y="751" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Audit trail: actor, time, reason, old value" vertex="1">
+          <mxGeometry height="47" width="430" x="1300" y="814" as="geometry" />
+        </mxCell>
+        <mxCell id="export" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Report export within permission scope" vertex="1">
+          <mxGeometry height="47" width="430" x="1300" y="877" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-current" edge="1" parent="1" source="access" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.14;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="current" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-domain" edge="1" parent="1" source="access" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="domain" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gate-assurance" edge="1" parent="1" source="access" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.86;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="assurance" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="persistence" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Persistence / repository boundary&#xa;Accepted records + batch operations + audit entries commit atomically where required" vertex="1">
+          <mxGeometry height="68" width="1140" x="610" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="domain-store" edge="1" parent="1" source="domain" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="persistence" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="assurance-store" edge="1" parent="1" source="assurance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="persistence" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" value="Existing PostgreSQL + PostGIS&#xa;Extend schema via additive migrations" vertex="1">
+          <mxGeometry height="80" width="710" x="40" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="db-existing" edge="1" parent="1" source="current" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=0.15;entryY=0;entryDx=0;entryDy=0;" target="db" value="existing pg queries">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="65" y="896" />
+              <mxPoint x="65" y="1140" />
+              <mxPoint x="146" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="db-planned" edge="1" parent="1" source="persistence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.15;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="db" value="pg • transaction + spatial validation">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="781" y="1145" />
+              <mxPoint x="608" y="1145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="attachments" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F5F9F6;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;" value="Protected laboratory attachments&#xa;Planned file storage + metadata links&#xa;Permission-checked access" vertex="1">
+          <mxGeometry height="100" width="510" x="820" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="protected-file" edge="1" parent="1" source="persistence" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.45;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=8 5;" target="attachments" value="authorized file / metadata access">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iot" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FAFBFA;strokeColor=#526B65;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=1 5;strokeWidth=2;" value="Optional IoT sensor gateway&#xa;Future input adapter → validation&#xa;No live devices in current prototype" vertex="1">
+          <mxGeometry height="100" width="400" x="1400" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="iot-input" edge="1" parent="1" source="iot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=13;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 5;strokeWidth=2;" target="api" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1820" y="1225" />
+              <mxPoint x="1820" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-solid" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;fontStyle=0;spacing=12;spacing=4;" value="Implemented baseline" vertex="1">
+          <mxGeometry height="30" width="250" x="40" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-dash" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=8 5;spacing=4;" value="Planned component" vertex="1">
+          <mxGeometry height="30" width="250" x="330" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-dot" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;fontStyle=0;spacing=12;dashed=1;dashPattern=1 5;strokeWidth=2;spacing=4;" value="Optional integration" vertex="1">
+          <mxGeometry height="30" width="250" x="620" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="migration" parent="1" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" value="TECHNOLOGY DECISION: The report provisionally proposes FastAPI + OpenLayers; current code and the implementation plan use Express + Leaflet. Any future migration requires a documented architecture decision. Planned observation flow: submit → permission check → validation → persistence → rule evaluation → explained status." vertex="1">
+          <mxGeometry height="70" width="1760" x="40" y="1350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

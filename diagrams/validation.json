@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "diagrams": [
+    {
+      "diagram": "01-current-system-context",
+      "vertices": 15,
+      "connectors": 6,
+      "png_pixels": [
+        3285,
+        2050
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "01-current-system-context.drawio": "acc337f33720f495ec3ab992a9eba3d76e6e241d88974f4567e5e6c71cb4898b",
+        "01-current-system-context.svg": "df9eddcc1ce340d1d2b28536b40ec2033f9f712089c776ee9ac5d8d035e471d7",
+        "01-current-system-context.png": "5bd6521c75db7b19fcd8a512738860a0e860883a5f9d95d7d4247c4567443ce3"
+      }
+    },
+    {
+      "diagram": "02-current-components",
+      "vertices": 36,
+      "connectors": 13,
+      "png_pixels": [
+        3447,
+        2530
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "02-current-components.drawio": "010d2041dedebce4d04cc82527a0fafa20c32b6c14cfc6ab2bb86333945e64ea",
+        "02-current-components.svg": "f7b511218d737988bcd636b47e02cad81fbd33d17634f7a6470d3e5da524716f",
+        "02-current-components.png": "93688c8035c6d9519211b1f432b259e5b807afe2fb26f35681ce5c309eefebd0"
+      }
+    },
+    {
+      "diagram": "03-current-erd",
+      "vertices": 59,
+      "connectors": 4,
+      "png_pixels": [
+        3607,
+        2690
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "03-current-erd.drawio": "0a850d34850cbdd1ce5f05094a29947aa428454ba3f0b41e1e5f75504ea38e0c",
+        "03-current-erd.svg": "c2e4a3103555f3a157c985b2acd6c38ab13d5b67156203b7de25cebebc24b3ad",
+        "03-current-erd.png": "85295852511643d0a6f19f8b07cd64cb907886b78645c2ca324b8184e312ae1e"
+      }
+    },
+    {
+      "diagram": "04-proposed-use-cases",
+      "vertices": 32,
+      "connectors": 13,
+      "png_pixels": [
+        3342,
+        2390
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "04-proposed-use-cases.drawio": "48b4561422373018d5d754c4737e8357353f251d3b5891c4ea85078b8ab27789",
+        "04-proposed-use-cases.svg": "72ad00ce9c054d782d89a2eb54a73b8abe63e46a67a7f746c566ae5d883c757b",
+        "04-proposed-use-cases.png": "70985ad01ef82198fc2c0a1f3a6e9faed2486b96c87ed22f2d4fc52a81b0845b"
+      }
+    },
+    {
+      "diagram": "05-proposed-topsoil-workflow",
+      "vertices": 25,
+      "connectors": 20,
+      "png_pixels": [
+        3926,
+        3010
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "05-proposed-topsoil-workflow.drawio": "990022203ffb3567df2c0b0bd7404e39b39f2460ce85af40cd3044f00dd87ebb",
+        "05-proposed-topsoil-workflow.svg": "b91862abbcfa6e1c30e9c537b88009d91d7367ab764d68539b3fe3cddb97f64e",
+        "05-proposed-topsoil-workflow.png": "54d509887d2212748ce09d3de89b6ad49af2ddad8ec3c4657fb70f2f612d8fac"
+      }
+    },
+    {
+      "diagram": "06-proposed-target-architecture",
+      "vertices": 35,
+      "connectors": 11,
+      "png_pixels": [
+        3730,
+        2950
+      ],
+      "native_cells_preserved_in_svg_and_png": true,
+      "sha256": {
+        "06-proposed-target-architecture.drawio": "72020dff76d49264c86a491c06b9dd3eb27949606a6f60479fb01906e25a5d6d",
+        "06-proposed-target-architecture.svg": "78c7ac749aa28ee31fa89660997f8ffa5694ce0d6f1357f21e7ade036e095fe2",
+        "06-proposed-target-architecture.png": "88116c3ecdd937533c5047174092f99157bf77051e44f0e3d077ded3a33a6ca9"
+      }
+    }
+  ]
+}

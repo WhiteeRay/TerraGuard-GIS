@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring" version="32.5.5">
+  <diagram id="05-proposed-topsoil-workflow" name="TerraGuard GIS — Topsoil Preservation and Restoration Workflow">
+    <mxGraphModel dx="1960" dy="1500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1960" pageHeight="1500" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="TerraGuard GIS — Topsoil Preservation and Restoration Workflow" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="24" width="1880" height="42" />
+        </mxCell>
+        <mxCell id="status" value="PROPOSED END-TO-END WORKFLOW" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="82" width="312" height="30" />
+        </mxCell>
+        <mxCell id="subtitle" value="Report §§7.4–7.7 • retain batch identity and event history • mixed-batch modelling is outside the initial scope" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="122" width="1880" height="32" />
+        </mxCell>
+        <mxCell id="footer" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1466" width="1880" height="22" />
+        </mxCell>
+        <mxCell id="s1" value="01  Register construction site&#10;and source area" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="210" width="330" height="92" />
+        </mxCell>
+        <mxCell id="s2" value="02  Define topsoil boundary&#10;and layer thickness" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="440" y="210" width="330" height="92" />
+        </mxCell>
+        <mxCell id="valid" value="Measurements&#10;valid?" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#E4F0EC;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="850" y="195" width="230" height="120" />
+        </mxCell>
+        <mxCell id="s3" value="03  Estimate topsoil volume" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="210" width="330" height="92" />
+        </mxCell>
+        <mxCell id="correct" value="Reject invalid values&#10;Correct geometry, thickness or units" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFF8EE;strokeColor=#AA8957;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="810" y="385" width="310" height="85" />
+        </mxCell>
+        <mxCell id="formula" value="LAYER ESTIMATE&#10;Volume (m³) = Area (m²) × Layer Thickness (m)&#10;Retain inputs, method and uncertainty." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1560" y="205" width="360" height="130" />
+        </mxCell>
+        <mxCell id="f12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f2v" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s2" target="valid">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fv3" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="s3">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="reject" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="correct">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="retry" value="revise" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="correct" target="s2">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="605" y="427" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s4" value="04  Record topsoil removal" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="545" width="330" height="92" />
+        </mxCell>
+        <mxCell id="s5" value="05  Create an identifiable&#10;soil batch" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="760" y="545" width="330" height="92" />
+        </mxCell>
+        <mxCell id="s6" value="06  Register storage location" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="545" width="330" height="92" />
+        </mxCell>
+        <mxCell id="f34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s4" target="s5">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s5" target="s6">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="s7" value="07  Record storage and&#10;observation history" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="360" y="765" width="330" height="92" />
+        </mxCell>
+        <mxCell id="context" value="Required data&#10;context complete?" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#E4F0EC;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="751" width="260" height="120" />
+        </mxCell>
+        <mxCell id="missing" value="Mark unresolved&#10;Request missing method, source,&#10;unit, depth or volume basis" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFF8EE;strokeColor=#AA8957;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1150" y="765" width="340" height="100" />
+        </mxCell>
+        <mxCell id="f67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s6" target="s7">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="s7context" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s7" target="context">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="missing-context" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="context" target="missing">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="resolve" value="complete context; no recommendation yet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="missing" target="s7">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1320" y="930" />
+              <mxPoint x="525" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="quantity" value="Requested quantity&#10;available on the&#10;same basis?" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#E4F0EC;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;shape=rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1650" y="751" width="270" height="120" />
+        </mxCell>
+        <mxCell id="context-ok" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="context" target="quantity">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="920" y="695" />
+              <mxPoint x="1785" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="unavailable" value="Reject excess quantity&#10;Revise request or review a&#10;documented correction" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFF8EE;strokeColor=#AA8957;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1610" y="1000" width="310" height="100" />
+        </mxCell>
+        <mxCell id="no-quantity" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="quantity" target="unavailable">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="s8" value="08  Record partial movement&#10;or reuse" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1130" y="1000" width="330" height="92" />
+        </mxCell>
+        <mxCell id="accept" value="Yes • accept in one transaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="quantity" target="s8">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1570" y="811" />
+              <mxPoint x="1570" y="965" />
+              <mxPoint x="1295" y="965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="retry-quantity" value="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="unavailable" target="quantity">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1940" y="1050" />
+              <mxPoint x="1940" y="811" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s9" value="09  Update recorded available&#10;batch quantity" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="730" y="1000" width="330" height="92" />
+        </mxCell>
+        <mxCell id="s10" value="10  Register restoration&#10;activity" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="1000" width="330" height="92" />
+        </mxCell>
+        <mxCell id="f89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s8" target="s9">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f910" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s9" target="s10">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="s11" value="11  Record follow-up&#10;soil observations" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="330" y="1220" width="330" height="92" />
+        </mxCell>
+        <mxCell id="s12" value="12  Review history,&#10;evidence and alerts" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=19;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="730" y="1220" width="330" height="92" />
+        </mxCell>
+        <mxCell id="f1011" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s10" target="s11">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="f1112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="s11" target="s12">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="fixture" value="SYNTHETIC SOFTWARE TEST&#10;100 m³ available − 40 m³ reused = 60 m³ remaining.&#10;All quantities use one declared reporting basis.&#10;This is a book balance, not a field measurement." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="1200" width="760" height="135" />
+        </mxCell>
+        <mxCell id="basis" value="MATERIAL ACCOUNTING&#10;Accepted incoming − outgoing + reviewed corrections.&#10;In-situ and loose stockpile volumes are not directly equivalent.&#10;Partial reuse retains the original batch ID. No batch mixing." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1350" width="1880" height="100" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

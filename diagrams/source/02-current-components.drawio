@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="TerraGuard GIS diagram authoring" version="32.5.5">
+  <diagram id="02-current-components" name="TerraGuard GIS — Current Component Architecture">
+    <mxGraphModel dx="1760" dy="1260" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1760" pageHeight="1260" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="TerraGuard GIS — Current Component Architecture" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=30;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="24" width="1680" height="42" />
+        </mxCell>
+        <mxCell id="status" value="CURRENT IMPLEMENTATION" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#173F35;strokeColor=#173F35;strokeWidth=1.6;fontFamily=Helvetica;fontSize=14;fontColor=#FFFFFF;fontStyle=1;spacing=12;spacing=4;whiteSpace=nowrap;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="82" width="310" height="30" />
+        </mxCell>
+        <mxCell id="subtitle" value="Implemented local prototype • code and SQL baseline shared with GitHub main f1fa448; local packaging is separate evidence." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=16;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="122" width="1680" height="32" />
+        </mxCell>
+        <mxCell id="footer" value="TERRAGUARD GIS  /  SOFTWARE ENGINEERING DIPLOMA  /  23 OCT 2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1226" width="1680" height="22" />
+        </mxCell>
+        <mxCell id="browser" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="170" width="1320" height="310" />
+        </mxCell>
+        <mxCell id="browser-label" value="FRONTEND LAYER  /  Web browser" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="180" width="1284" height="28" />
+        </mxCell>
+        <mxCell id="frontend-tech" value="Vanilla JavaScript  •  Vite builds client assets  •  Leaflet + Leaflet Draw  •  Chart.js" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=18;fontColor=#203A36;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="217" width="1320" height="30" />
+        </mxCell>
+        <mxCell id="overview" value="Overview Dashboard" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="270" width="260" height="66" />
+        </mxCell>
+        <mxCell id="map" value="GIS Map" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="370" y="270" width="260" height="66" />
+        </mxCell>
+        <mxCell id="monitor" value="Soil Monitoring" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="670" y="270" width="260" height="66" />
+        </mxCell>
+        <mxCell id="restore" value="Preservation &amp;&#10;Restoration" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="970" y="270" width="260" height="66" />
+        </mxCell>
+        <mxCell id="osm" value="OpenStreetMap&#10;External basemap service" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#526B65;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1430" y="263" width="255" height="94" />
+        </mxCell>
+        <mxCell id="client" value="Frontend API client&#10;client/lib/api.js" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="390" width="420" height="66" />
+        </mxCell>
+        <mxCell id="client-detail" value="Views request application data through the shared API client." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=15;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="402" width="520" height="44" />
+        </mxCell>
+        <mxCell id="tiles" value="HTTPS tile requests / PNG tiles" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="map" target="osm">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="500" y="250" />
+              <mxPoint x="1395" y="250" />
+              <mxPoint x="1395" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="view-overview" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="overview" target="client">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="200" y="370" />
+              <mxPoint x="870" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="view-map" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="map" target="client">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="500" y="370" />
+              <mxPoint x="870" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="view-monitor" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="monitor" target="client">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="800" y="370" />
+              <mxPoint x="870" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="view-restore" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="restore" target="client">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1100" y="370" />
+              <mxPoint x="870" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="app" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="530" width="1680" height="500" />
+        </mxCell>
+        <mxCell id="app-label" value="BACKEND LAYER  /  Application container: Node.js + Express" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="540" width="1644" height="28" />
+        </mxCell>
+        <mxCell id="routes" value="API routes&#10;server/routes.js" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="660" y="582" width="420" height="66" />
+        </mxCell>
+        <mxCell id="validate" value="Request validation&#10;Types, ranges, dates, GeoJSON" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="582" width="420" height="66" />
+        </mxCell>
+        <mxCell id="http" value="/api  •  REST / JSON requests and responses" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="client" target="routes">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="validation" value="validate input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="routes" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="repos" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="700" width="560" height="205" />
+        </mxCell>
+        <mxCell id="repos-label" value="Repositories" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="88" y="710" width="524" height="28" />
+        </mxCell>
+        <mxCell id="projects" value="Project repository" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="749" width="245" height="55" />
+        </mxCell>
+        <mxCell id="zones" value="Zone repository" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="355" y="749" width="245" height="55" />
+        </mxCell>
+        <mxCell id="measurements" value="Measurement repository" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="830" width="245" height="55" />
+        </mxCell>
+        <mxCell id="activities" value="Activity repository" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="355" y="830" width="245" height="55" />
+        </mxCell>
+        <mxCell id="services" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="700" y="700" width="540" height="205" />
+        </mxCell>
+        <mxCell id="services-label" value="Application services" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="718" y="710" width="504" height="28" />
+        </mxCell>
+        <mxCell id="summary" value="Summary service" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="749" width="235" height="55" />
+        </mxCell>
+        <mxCell id="analysis" value="Soil analysis service&#10;Demonstration rules" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="975" y="749" width="245" height="55" />
+        </mxCell>
+        <mxCell id="gis" value="GIS calculation service&#10;Geometry checks; layer volume" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=16;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="830" width="500" height="55" />
+        </mxCell>
+        <mxCell id="pg" value="PostgreSQL connection pool&#10;pg client • server/db.js" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=1;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1320" y="790" width="340" height="95" />
+        </mxCell>
+        <mxCell id="route-repos" value="read / write records" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.33;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="routes" target="repos">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="800" y="675" />
+              <mxPoint x="350" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="route-services" value="summaries / analysis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0.67;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="routes" target="services">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="repo-pool" value="parameterized SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="repos" target="pg">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="650" y="940" />
+              <mxPoint x="1490" y="940" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gis-pool" value="spatial SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;" edge="1" parent="1" source="gis" target="pg">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="backend-note" value="Selected dependencies: routes call repositories and services; Summary reads repositories and the pool; Zone repository calls GIS geometry validation. Geographic area is computed by PostGIS; JavaScript also exposes A × depth / 100 for cm input." style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F3F6F4;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=15;fontColor=#203A36;fontStyle=0;spacing=12;align=left;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="961" width="1590" height="48" />
+        </mxCell>
+        <mxCell id="data" value="" style="rounded=0;arcSize=10;whiteSpace=wrap;html=0;fillColor=#F7FAF8;strokeColor=#B1C7BF;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1070" width="1680" height="130" />
+        </mxCell>
+        <mxCell id="data-label" value="DATA LAYER  /  Database container" style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=17;fontColor=#173F35;fontStyle=1;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="58" y="1080" width="1644" height="28" />
+        </mxCell>
+        <mxCell id="db" value="PostgreSQL 16 + PostGIS 3.4&#10;ST_IsValid • ST_Area(geom::geography) • GeoJSON" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1115" width="780" height="64" />
+        </mxCell>
+        <mxCell id="init" value="SQL migrations + synthetic seed data&#10;database/run.js • database/seeds/demo.sql" style="rounded=1;arcSize=10;whiteSpace=wrap;html=0;fillColor=#EDF5F1;strokeColor=#397F7A;strokeWidth=1.6;fontFamily=Helvetica;fontSize=17;fontColor=#203A36;fontStyle=0;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="950" y="1115" width="720" height="64" />
+        </mxCell>
+        <mxCell id="pg-db" value="pg / SQL results" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=block;startFill=1;" edge="1" parent="1" source="pg" target="db">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1695" y="837.5" />
+              <mxPoint x="1695" y="1045" />
+              <mxPoint x="460" y="1045" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="seed-db" value="initialise" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=20;html=0;strokeColor=#64847B;strokeWidth=1.6;endArrow=block;endFill=1;fontFamily=Helvetica;fontSize=14;fontColor=#203A36;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="init" target="db">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="infra" value="Docker Compose orchestrates app + db. The app serves the Vite build; the frontend executes in the browser. Vite is a build/dev tool." style="text;html=0;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#526B65;fontStyle=0;spacing=0;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1203" width="1610" height="22" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

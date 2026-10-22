@@ -1,0 +1,235 @@
+{
+  "review_date": "2026-10-23",
+  "repository": "https://github.com/WhiteeRay/TerraGuard-GIS",
+  "baseline_commit": "f1fa4484fc16f7b72e5649712ad98278a55b410a",
+  "matched_repository_archive_and_local_files": [
+    {
+      "repository_path": "src/client/lib/api.js",
+      "archive_path": "client/lib/api.js",
+      "sha256": "8b7943cad397a0e99e14364bab3336787df92f083630420cd83e72890438627c"
+    },
+    {
+      "repository_path": "src/client/lib/charts.js",
+      "archive_path": "client/lib/charts.js",
+      "sha256": "fa4a69a53e9b5c02e4c7438b358d17c143cedaffc3dbb8a55e9e24b505e0b095"
+    },
+    {
+      "repository_path": "src/client/lib/forms.js",
+      "archive_path": "client/lib/forms.js",
+      "sha256": "82e9e7629e4b1adfd1a4741193af760fbc4fda325d5efaf52a877e60f8efa0de"
+    },
+    {
+      "repository_path": "src/client/lib/localization.js",
+      "archive_path": "client/lib/localization.js",
+      "sha256": "0285ee743fb3e48a49e9547242f891e008b83c1dc26f481d31d03a026128cf3f"
+    },
+    {
+      "repository_path": "src/client/lib/map.js",
+      "archive_path": "client/lib/map.js",
+      "sha256": "7b47b3463e5573e308e7a1ff78c17a065360a02e553576781796516598adf730"
+    },
+    {
+      "repository_path": "src/client/lib/ui.js",
+      "archive_path": "client/lib/ui.js",
+      "sha256": "b44457e4608fd16f9529badd0960f2974bb436235e145714c90d9bdcb00c94f4"
+    },
+    {
+      "repository_path": "src/client/main.js",
+      "archive_path": "client/main.js",
+      "sha256": "c8c47397885e6c76c99770918fc36b49ea189cd30367be001fad66cddc6a3a05"
+    },
+    {
+      "repository_path": "src/client/refinements.css",
+      "archive_path": "client/refinements.css",
+      "sha256": "ad9541d692665f88bf8c6ed4132b0ac3a6da200856597e0d5d415b17e8b03505"
+    },
+    {
+      "repository_path": "src/client/style.css",
+      "archive_path": "client/style.css",
+      "sha256": "59f1fc4eb8a5806d1f39703368fcb2a3352e7a947e5d4895fb4f167a59764fdb"
+    },
+    {
+      "repository_path": "src/client/views/gis.js",
+      "archive_path": "client/views/gis.js",
+      "sha256": "5e4901cccfd7b08058151d11132882018aea2d5f070a480298caa73da285b26f"
+    },
+    {
+      "repository_path": "src/client/views/monitoring.js",
+      "archive_path": "client/views/monitoring.js",
+      "sha256": "3ab4730c4dfd5e96c6157bc2f06b994df45b48e9a8e8815663c9a451c4e8a622"
+    },
+    {
+      "repository_path": "src/client/views/overview.js",
+      "archive_path": "client/views/overview.js",
+      "sha256": "7d978ee3e00c62c8136aec282773ccdf42f1b43f99ec2c7c2a2269362196590b"
+    },
+    {
+      "repository_path": "src/client/views/restoration.js",
+      "archive_path": "client/views/restoration.js",
+      "sha256": "0809912c18969064f791cca38f231e51cf3abc0c582d310af2f84f24221419f1"
+    },
+    {
+      "repository_path": "src/database/migrations/001_initial.sql",
+      "archive_path": "database/migrations/001_initial.sql",
+      "sha256": "325dcfa0ae932b55033b521afc8c76fb86725f07bc09045447589d839a9c2c19"
+    },
+    {
+      "repository_path": "src/database/migrations/002_monitoring_attributes.sql",
+      "archive_path": "database/migrations/002_monitoring_attributes.sql",
+      "sha256": "c7acb927cf0a0900619200cfc35d265bac594f8b8d04e6c6df29c96e505a749d"
+    },
+    {
+      "repository_path": "src/database/run.js",
+      "archive_path": "database/run.js",
+      "sha256": "fb16c505d80287f0a80bbe2e27bdcfb09771c7ef4bf59dc98a350cdf021c29a8"
+    },
+    {
+      "repository_path": "src/database/seeds/demo.sql",
+      "archive_path": "database/seeds/demo.sql",
+      "sha256": "b21275246b41f5e7051a5b6200cafd8ebbb886fa180aa741ec33b94e0b07f9a3"
+    },
+    {
+      "repository_path": "src/server/app.js",
+      "archive_path": "server/app.js",
+      "sha256": "192049a86db358c04e1420bafe7609ef09a79c031221b77478d56bb8d35cae52"
+    },
+    {
+      "repository_path": "src/server/db.js",
+      "archive_path": "server/db.js",
+      "sha256": "da7ab713b2eaf479c497ee8a33f251592f74c5fb3fc8e4d54aceeb9d6352ff22"
+    },
+    {
+      "repository_path": "src/server/repositories/activities.js",
+      "archive_path": "server/repositories/activities.js",
+      "sha256": "b44389a9997cbf318c3790f69c36d9ffd40555540e8ff28ae23837d7e1a77a62"
+    },
+    {
+      "repository_path": "src/server/repositories/measurements.js",
+      "archive_path": "server/repositories/measurements.js",
+      "sha256": "a21121a64bf0c1d60fc4ee2b3b4ced4a187cde337b9375b3d4168a53f3e17c3a"
+    },
+    {
+      "repository_path": "src/server/repositories/projects.js",
+      "archive_path": "server/repositories/projects.js",
+      "sha256": "484451cc681a3378adf4c8ec1e75588e47bcdf62f13abbb99e1e1b0a192dd5d5"
+    },
+    {
+      "repository_path": "src/server/repositories/zones.js",
+      "archive_path": "server/repositories/zones.js",
+      "sha256": "836d3cd5c31db5cfb63a694dfe86f0afcb65f291c9f01e36eaff2cd71e21eb95"
+    },
+    {
+      "repository_path": "src/server/routes.js",
+      "archive_path": "server/routes.js",
+      "sha256": "e8f4b0f72c2630c5d2a92ee925078f1417a2385650a36473ef958ddbebfd953a"
+    },
+    {
+      "repository_path": "src/server/services/analysis.js",
+      "archive_path": "server/services/analysis.js",
+      "sha256": "e7bb2a8b3ec0351e9341c0834a7f297c1bae886614befd4eb6232b0611dd29eb"
+    },
+    {
+      "repository_path": "src/server/services/gis.js",
+      "archive_path": "server/services/gis.js",
+      "sha256": "1ae6ebfcf515123be436ef6039548b4f73c35aef08def8e75d72dc090a856627"
+    },
+    {
+      "repository_path": "src/server/services/summary.js",
+      "archive_path": "server/services/summary.js",
+      "sha256": "ab0439cc6df10931791363ad93cf4a80c8b1d463288d10de9465cbdea4dccd58"
+    },
+    {
+      "repository_path": "src/server/validation.js",
+      "archive_path": "server/validation.js",
+      "sha256": "89d279c53605d1b51f4da2f67554edcc8f1d7124b49a32ced816dfd7f5110a43"
+    },
+    {
+      "repository_path": "tests/analysis.test.js",
+      "archive_path": "tests/analysis.test.js",
+      "sha256": "358e896640557c0a03b8588aa12540e2236061f8b780e4c91fb423a16168ba9b"
+    },
+    {
+      "repository_path": "tests/browser-check.html",
+      "archive_path": "tests/browser-check.html",
+      "sha256": "e226580f454f5c1010dcde25b476861e7fcba23c536121c1229432b612b0d02e"
+    },
+    {
+      "repository_path": "tests/csv.test.js",
+      "archive_path": "tests/csv.test.js",
+      "sha256": "660b431b8577e7dfe0c8f470a00f9bb0ad6dc82a4b6e5954647ba8124953c529"
+    },
+    {
+      "repository_path": "tests/forms.test.js",
+      "archive_path": "tests/forms.test.js",
+      "sha256": "5863c2d019c6c63e0acb7633721bff38b84ded31374583298086938ebd032c3d"
+    },
+    {
+      "repository_path": "tests/integration.test.js",
+      "archive_path": "tests/integration.test.js",
+      "sha256": "9b5aeb8403363675c5e873f9a733230e8ffd5d00dd91e89a150c8693fa6b80c6"
+    },
+    {
+      "repository_path": "tests/localization.test.js",
+      "archive_path": "tests/localization.test.js",
+      "sha256": "dc82d1d75a4bbe039e63c133dfadfa3a9a35d1aea4853f108c87584f53467fb9"
+    },
+    {
+      "repository_path": "tests/validation.test.js",
+      "archive_path": "tests/validation.test.js",
+      "sha256": "e1f7bc922f064e13ac457d9fa4f4dd02dd481dac89de574d4b4462b0b8b42991"
+    },
+    {
+      "repository_path": "scripts/check.js",
+      "archive_path": "scripts/check.js",
+      "sha256": "e2382b53ab6415dbc2a71950ff0a5214ee884f51f1cae3ab55cfba235dd455fa"
+    }
+  ],
+  "local_prototype_packaging_evidence": [
+    {
+      "archive_path": "package.json",
+      "sha256": "ddb0a6085ea49b94ae237bd9e4d49f0441ea0bf617835a2b949f1c3e2525debe"
+    },
+    {
+      "archive_path": "vite.config.js",
+      "sha256": "a4f78022b5199880747b28bce304c259869780a61ba482ac1357ab6c16d4598b"
+    },
+    {
+      "archive_path": "Dockerfile",
+      "sha256": "173f98f489ef2ce707757e4e80af7b2a66e8aadc03bf8cbd4a34333ae0dd3421"
+    },
+    {
+      "archive_path": "compose.yaml",
+      "sha256": "10c538876b38ff701726f94d53cbeb258a922699362d5df1fa46bcf7601c4a4f"
+    },
+    {
+      "archive_path": "client/index.html",
+      "sha256": "98afa6a71f8e635c0cfdf30b386baa6e0493191fa4af2d04b31917b5a26f2ef3"
+    },
+    {
+      "archive_path": "server/index.js",
+      "sha256": "7134265df0868a5e4e97526c834af3f78074cfb6ae5235ac7a86ac065c6f96ef"
+    },
+    {
+      "archive_path": "server/config.js",
+      "sha256": "29d51f81096111c26f89d678b9840e35ee0c4b99005bb8f2520c256276f554b0"
+    },
+    {
+      "archive_path": "server/errors.js",
+      "sha256": "3e9e0ef50aec6381ffe5d07d919d2e1990c7340e5b49e0d5c50fa30ab86b1227"
+    }
+  ],
+  "supplied_materials": [
+    {
+      "filename": "TerraGuard GIS.zip",
+      "sha256": "153d78878e89fcafd20a7acf8f862dfb6c8d8245496e8309b858065eb3110568"
+    },
+    {
+      "filename": "TerraGuard_Plan.docx",
+      "sha256": "93b94a5031d7c20ffeb666b4da09ab2bc862907284a28553ee93b2b7ad454841"
+    },
+    {
+      "filename": "TerraGuardGIS_Report.docx",
+      "sha256": "913b906fdd7f5000016235839d8d1b4c57cbe4fa611d17b7f80a6a524ce04e8d"
+    }
+  ]
+}

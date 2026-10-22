@@ -8,6 +8,10 @@ TerraGuard GIS is a Software Engineering diploma project at Astana IT University
 
 [Overview](#project-overview) | [Planned functionality](#planned-functionality) | [Architecture](#proposed-architecture) | [Documentation](#documentation-and-current-status) | [Team](#team) | [YouTrack](#project-tracking)
 
+## Diagrams
+
+[Editable diagrams and SVG/PNG exports](diagrams/README.md) distinguish the current local prototype (context, components and actual database schema) from proposed use cases, the topsoil lifecycle and target architecture. Start with the [component diagram](diagrams/source/02-current-components.drawio) or [ERD](diagrams/source/03-current-erd.drawio). The source baseline uses Express and Leaflet; the report's FastAPI/OpenLayers choices remain proposals. The [evidence notes](diagrams/README.md#differences-that-must-remain-explicit) explain differences between this repository, the supplied local prototype and the report; these diagrams do not establish a runnable `main` release.
+
 ## Project overview
 
 **Working name:** TerraGuard GIS
