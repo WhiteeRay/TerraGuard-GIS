@@ -1,220 +1,161 @@
 # TerraGuard GIS
 
-**A map-based system for documenting topsoil monitoring, preservation and restoration during construction.**
+**TerraGuard GIS** is a planned web-based geographic information system for monitoring, preserving, and restoring fertile topsoil during construction. The project focuses on tracking soil from its original location through removal, storage, reuse, and follow-up monitoring.
 
-TerraGuard GIS is a Software Engineering diploma project at Astana IT University. It proposes a connected record of where topsoil originated, where it was stored, which observations were collected and how the material was later reused.
+**Diploma project:** Software Engineering, Astana IT University (2026)  
+**Current status:** Research, requirements analysis, and system design. **No runnable application has been released yet.**
 
-> **Development stage:** Research, requirements analysis and system design. The features described below are planned capabilities, not a released application.
 
-[Overview](#project-overview) | [Planned functionality](#planned-functionality) | [Architecture](#proposed-architecture) | [Documentation](#documentation-and-current-status) | [Team](#team) | [YouTrack](#project-tracking)
+## Interface Preview (Demo Data)
 
-## Project overview
+The following screenshots illustrate the TerraGuard GIS interface using **demo/synthetic data**. They show the intended user experience, but do not demonstrate that all planned functionality or backend integrations are complete.
 
-**Working name:** TerraGuard GIS
+### Overview Dashboard
 
-**Diploma topic:** Development of an intelligent geoinformation system for monitoring, preserving, and restoring the fertile soil layer during construction.
+The workspace overview brings together site statistics, soil measurements, monitoring zones, alerts, and a map preview.
 
-| Academic information | Details |
+![TerraGuard GIS Overview dashboard displaying site statistics, soil conditions, and monitoring zones](assets/screenshots/overview-dashboard.png)
+
+### GIS Map
+
+The spatial workspace displays zone boundaries and statuses on an interactive-style map, with detailed information for the selected monitoring zone.
+
+![TerraGuard GIS map showing five monitoring zones and details for Zone A](assets/screenshots/gis-map.png)
+
+
+## 1. Problem Statement
+
+Construction projects may require topsoil to be removed, stored, and reused. Tracking these operations requires information about the source area, soil quantity, storage location, measurements, and final use. When records are maintained separately in maps, spreadsheets, and documents, reconstructing the history of a soil batch can be difficult.
+
+TerraGuard GIS aims to investigate this challenge and provide a single map-based workflow for maintaining traceable soil records. The extent of the problem and specific user needs will be validated through further research with potential users.
+
+## 2. Target Users
+
+| Target user | Intended use |
 | --- | --- |
-| University | Astana IT University |
-| Educational programme | Software Engineering |
-| Supervisor | Nadirov Nurtas |
-| Year | 2026 |
+| Environmental specialists | Record soil observations, review monitoring history, and prepare documentation. |
+| Construction site managers | Track topsoil removal, storage, movement, and reuse. |
+| Restoration and landscaping specialists | Record restoration activities and follow-up observations. |
+| Soil specialists | Review measurement methods and assess soil-related decision rules. |
 
-The project's main focus is traceability. A user should be able to follow a recorded soil batch from its source area through removal, storage and reuse, while retaining the measurements and decisions associated with those stages.
+These are proposed user groups. Detailed roles and access permissions have not yet been finalized.
 
-## Problem statement
+## 3. Project Aim and Expected Outcomes
 
-Removing topsoil creates a record-keeping problem as well as a physical management task. A useful record needs to connect the original area, removal date, estimated quantity, storage location and subsequent use. Soil observations also need context: a value without its unit, sampling depth, method or date may not support a reliable comparison.
+**Aim:** Design, develop, and evaluate a web-based GIS that links spatial soil records with traceable material operations and explainable rule-based decision support.
 
-TerraGuard GIS will investigate whether these records can be managed more consistently in a shared map-based workflow. It will also examine whether users can retrieve the history of a location or soil batch more effectively than with a baseline consisting of separate maps, spreadsheets and measurement documents.
+**Expected outcomes:**
 
-Fragmented records are a working hypothesis, not an established problem for every construction team. The intended users' actual processes and priorities still require focused follow-up research.
+- A working web application prototype with an interactive map.
+- A spatial database and API for site, soil batch, and observation records.
+- A workflow that traces topsoil from its source through storage and reuse.
+- Basic volume estimation, measurement history, and explainable alerts.
+- Project documentation, tests, and an evaluation of software correctness and user workflows.
 
-## Aim and expected outcomes
+These are planned deliverables, not completed results. Demonstrating environmental improvements would require separate field evidence.
 
-The aim is to design, develop and evaluate a web-based geographic information system that combines location-based soil records with explainable decision support.
+## 4. Team Members and Supervisor
 
-The intended deliverables are a working web prototype, a spatial database and API, reviewed requirements, architectural documentation, interface materials, and a reproducible evaluation record. Evaluation will address software correctness and workflow performance. Environmental improvement is a separate outcome that would require field evidence.
+| Team member | Role | Main responsibilities |
+| --- | --- | --- |
+| **Mazhitova Aknur** | Backend Developer | Database design, API development, input validation, calculation logic, and technical tests. |
+| **Zholekesh Kyrmyzy** | Frontend Developer | Interactive maps, forms, charts, interface development, and usability testing. |
+| **Tukezhan Kausar** | System Analyst | User research, requirements analysis, literature review, documentation, and evaluation coordination. |
 
-## Target users
+**Supervisor:** Nadirov Nurtas  
+**University:** Astana IT University  
+**Educational programme:** Software Engineering
 
-| Intended user | Proposed use of the system |
-| --- | --- |
-| Environmental specialists | Register observations, inspect monitoring history and prepare soil-management records. |
-| Construction site managers | Record removal, storage, movement and reuse of topsoil. |
-| Restoration and landscaping specialists | Document interventions and connect them with follow-up observations. |
-| Soil specialists | Review measurement methods, interpret observations and assess the applicability of decision rules. |
+Responsibilities describe the planned division of work; documentation, testing, and reviews are shared activities.
 
-These are proposed working roles. Access permissions will be defined separately rather than inferred from a job title.
+## 5. Project Scope
 
-## Core workflow
+### In Scope (Planned)
 
-The first prototype is intended to support one complete, traceable sequence:
+The initial prototype is intended to support:
+
+| Functionality | Description | Requirement IDs |
+| --- | --- | --- |
+| Site mapping | Register site boundaries and sampling locations on a map. | FR-02, FR-03 |
+| Soil observations | Enter measurements with units, dates, location, depth, method, and source; validate CSV imports. | FR-04, FR-05 |
+| Topsoil traceability | Record removal, storage, movement, and reuse while preserving each soil batch's history. | FR-07, FR-08 |
+| Volume estimation | Estimate soil layer volume using area and average thickness with input validation. | FR-09 |
+| Monitoring history | Filter observations by location, indicator, and date. | FR-10 |
+| Explainable alerts | Apply reviewed, versioned rules and explain why an alert was generated. | FR-11 |
+| Restoration records | Connect restoration activities to areas, batches, and follow-up observations. | FR-12 |
+| Access control and audit trail | Manage permissions and record changes to project data. | FR-01, FR-14 |
+| Laboratory attachments | Associate supporting laboratory files with observations, if feasible. | FR-06 (Should) |
+| Data exports | Export permitted records and relevant measurement context, if feasible. | FR-13 (Should) |
+
+The intended core workflow is:
 
 ```text
 Source area
-    -> Topsoil removal record
+    -> Topsoil removal
     -> Identifiable soil batch
-    -> Storage location and observations
-    -> Reuse or restoration operation
+    -> Storage and observations
+    -> Reuse / restoration
     -> Follow-up observations
 ```
 
-Each material operation will retain its date, quantity, declared volume basis and responsible user. Partial reuse will preserve the original batch identity and operation history. Mixing different batches is outside the initial scope.
+### Out of Scope (Initial Version)
 
-## Planned functionality
+The first version will not include physical soil treatment, sensor manufacturing, automatic control of construction machinery, regulatory certification, mixed-batch modelling, mandatory satellite processing, or machine-learning model training. Live sensor integration is optional and not required for the initial prototype.
 
-The identifiers below correspond to the initial requirements in Section 6 of the academic report. **Must** requirements define the proposed core demonstration; **Should** requirements may be deferred with a documented reason. None is marked as implemented.
+The system is intended to support, not replace, qualified environmental assessment.
 
-| Capability | Planned behaviour | Priority / requirement |
-| --- | --- | --- |
-| Site mapping | Create site boundaries and sampling points; open the records associated with a selected location. | Must: FR-02, FR-03 |
-| Observation management | Record values with units, date/time, location, depth, method and source; preview and validate CSV imports. | Must: FR-04, FR-05 |
-| Topsoil traceability | Connect removal, storage, movement and reuse records without losing the batch history. | Must: FR-07, FR-08 |
-| Volume estimation | Estimate a topsoil layer's volume from area and average thickness, with unit and input checks. | Must: FR-09 |
-| Measurement history | Filter observations by location, indicator and date without silently combining incompatible measurements. | Must: FR-10 |
-| Explainable alerts | Apply reviewed rules and show the input, rule version and reason behind each result. | Must: FR-11 |
-| Restoration records | Link restoration activities with relevant areas, batch operations and follow-up observations. | Must: FR-12 |
-| Access control and audit history | Restrict actions by permission and preserve the actor, time and reason for record corrections. | Must: FR-01, FR-14 |
-| Laboratory evidence | Attach laboratory evidence to the relevant sample or observation. | Should: FR-06 |
-| Reporting | Export selected records with their units and provenance, within the user's permission scope. | Should: FR-13 |
+## 6. Current Development Status
 
-### Volume calculation
+**Stage as of October 2026: research and system design.** Features described in this README are proposed and should not be interpreted as implemented.
 
-The initial calculation is a layer estimate:
-
-```text
-Volume (m3) = Area (m2) x Average layer thickness (m)
-```
-
-For example, the planned arithmetic test uses an area of 1,000 m2 and a thickness of 0.20 m, giving 200 m3. This is a test fixture, not a site measurement. The calculation is not a stockpile-shape model, and in-situ and loose volumes must not be treated as interchangeable quantities.
-
-## Intelligent decision support
-
-The first intelligent component is a transparent, versioned rule system rather than a trained prediction model. A proposed rule records its indicator, permitted unit and measurement method, site context, comparison operator, threshold, evidence source and review status.
-
-An alert should explain which observation triggered it and which rule version was applied. A data-quality warning should remain distinct from a soil-condition alert: missing measurement metadata does not, by itself, demonstrate poor soil quality.
-
-The report does not establish universal environmental thresholds. Rules require review for their intended context, and missing or incompatible evidence must produce an explicit unresolved state rather than an unsupported recommendation.
-
-## Scope and limitations
-
-The initial version covers site mapping, manual entry and CSV import, observation histories, identifiable soil batches, storage and reuse records, layer-volume estimates, restoration records and rule-based alerts.
-
-Live sensor integration is optional. It depends on access to equipment, suitable data and verification resources; it is not required for the first end-to-end demonstration.
-
-The initial scope excludes physical excavation or soil treatment, sensor manufacture, automatic machinery control, regulatory certification, mixed-batch modelling, mandatory satellite processing and machine-learning model training. The system will not infer complete fertility from a small set of readings or guarantee ecological recovery.
-
-TerraGuard GIS is intended to support professional judgement, not replace laboratory analysis or qualified environmental assessment.
-
-## Proposed architecture
-
-The design uses a browser interface, one backend application with separate internal modules, a spatial database and protected attachment storage.
-
-```text
-Browser interface
-Map, forms, observation history and alerts
-                    |
-                 JSON API
-                    |
-Backend application
-Authentication | Validation | Material operations
-Rule evaluation | Exports | Audit history
-                    |
-          +---------+----------+
-          |                    |
-PostgreSQL + PostGIS     Protected attachment storage
-```
-
-The API will check permissions and validate incoming records before accepting them. Material operations will need transactional updates so that a failed operation cannot leave an inconsistent recorded balance. Attachments will be linked through metadata and accessed according to permissions.
-
-### Proposed technology baseline
-
-These choices come from the report's technology comparison. They remain proposals for team and supervisor review, not a claim that the stack has been approved, installed or benchmarked.
-
-| Component | Proposed choice | Intended responsibility |
-| --- | --- | --- |
-| Backend | Python with FastAPI | API endpoints, input validation and application logic. |
-| Spatial data storage | PostgreSQL with PostGIS | Related site, batch and observation records; spatial validation and calculations. |
-| Web mapping | OpenLayers | Site boundaries, sampling locations and map-based interaction. |
-| Component interaction | JSON API | Communication between the browser client and backend. |
-
-The broader frontend framework, dependency versions, hosting environment and basemap provider have not been finalised. Microservices are not part of the initial architecture.
-
-## Data and research evidence
-
-Moisture, temperature, pH and electrical conductivity are initial candidate indicators. The proposed data model also accommodates laboratory and field results, such as organic matter, bulk density and layer thickness. The availability and suitability of each indicator still need confirmation.
-
-Observations will retain their location, time, unit, depth, method and source. Measured observations, background estimates and synthetic test records must remain distinguishable. Records with different methods, units or depths must not be silently combined.
-
-The research report includes a twelve-source literature review, a comparison of five existing systems and an exploratory questionnaire collected on 19-20 October 2026. The questionnaire contains 25 submissions, of which 24 include consent; only consenting submissions are used in the analysis. Respondents have varied experience, and some answers are inconsistent. The findings inform provisional requirements; they do not establish representative demand among verified construction professionals.
-
-Identifiable respondent data, credentials and access tokens must not be included in public project materials. Synthetic datasets will be labelled and used to test software behaviour, not as evidence of field conditions.
-
-## Verification and evaluation
-
-The planned evaluation separates record correctness from user workflow performance.
-
-| Area | Planned check |
+| Work area | Current status |
 | --- | --- |
-| Geometry and calculations | Test valid and invalid boundaries, coordinate handling, units and known area/thickness examples. |
-| Data import | Check missing metadata, invalid units, duplicate identifiers and accepted/rejected row counts. |
-| Material history | Test partial transfers, insufficient available quantities and rollback after failed operations. |
-| Rule behaviour | Test values below, at and above a configured limit, plus missing-context cases. |
-| Permissions and auditability | Test permitted and denied actions, protected exports and the history of corrections. |
-| Workflow evaluation | Compare equivalent tasks in the prototype and a baseline of separate maps, spreadsheets and measurement files. |
+| Project proposal and literature review | Draft prepared. |
+| Existing-systems comparison and initial user research | Exploratory work documented; further validation needed. |
+| Requirements and technology selection | Proposed; awaiting review and finalization. |
+| Architecture and interface layouts | Initial designs documented; demo interface screenshots included above. |
+| Backend, frontend, and database implementation | Not yet available as runnable code. |
+| Automated tests and user evaluation | Planned; results not yet available. |
 
-The user evaluation will examine task completion, elapsed time, errors and understanding of alert explanations. The report defines prospective test conditions and acceptance targets; no test results, performance benchmarks or field-validation results are claimed here.
+**Next steps:** Validate requirements with relevant users, agree on the technical baseline, build the first complete source-to-storage-to-reuse workflow, and then implement observation management, alerts, and tests.
 
-## Documentation and current status
+## 7. Selected Technologies (Proposed)
 
-The main reference is the [TerraGuard GIS academic report](docs/TerraGuard_GIS_Report_v4.docx). It contains the proposal, research, initial requirements, architecture, low-fidelity interface layouts and evaluation plan.
-
-| Work area | Status reflected in the report |
-| --- | --- |
-| Proposal, literature and existing-system comparison | Draft material prepared. |
-| Exploratory questionnaire analysis | Included, with limitations; focused follow-up remains necessary. |
-| Requirements and technology choices | Proposed baseline awaiting review. |
-| Architecture and interface layouts | Draft design artefacts, not implemented screens. |
-| Application code and live sensor integration | Planned; no runnable release is included. |
-| Testing and evaluation | Plan prepared; execution and results pending. |
-
-### Documentation package layout
-
-```text
-.
-|-- README.md
-`-- docs/
-    `-- TerraGuard_GIS_Report_v4.docx
-```
-
-This is a documentation package, not an application directory. Source, test and configuration directories should reflect actual implementation work when it is added.
-
-## Getting started
-
-At this stage, start with the academic report rather than installation commands. There is no application release to install or run in this package.
-
-When runnable code is available, this section will need verified prerequisites, dependency installation, configuration examples, database initialisation, sample-data loading, startup commands and test instructions.
-
-## Team
-
-| Team member | Role | Responsibility area |
+| Component | Technology | Purpose |
 | --- | --- | --- |
-| Mazhitova Aknur | Backend Developer | Database, API, validation, calculation logic and technical tests. |
-| Zholekesh Kyrmyzy | Frontend Developer | Map interface, forms, charts and user interaction testing. |
-| Tukezhan Kausar | System Analyst | User research, literature analysis, requirements, comparisons and evaluation coordination. |
+| Backend | **Python + FastAPI** | REST-style API, business logic, and validation. |
+| Database | **PostgreSQL + PostGIS** | Relational and geographic data storage and spatial operations. |
+| Web mapping | **OpenLayers** | Display and interact with sites and sampling locations. |
+| Client-server communication | **JSON API** | Exchange data between the frontend and backend. |
+| Decision support | **Versioned, rule-based logic** | Provide traceable alerts based on reviewed rules and measurement context. |
 
-**Supervisor:** Nadirov Nurtas
+The frontend framework, hosting platform, dependency versions, and map provider are not yet finalized. These technologies represent a proposed baseline rather than a completed setup.
 
-Documentation, testing and review are shared responsibilities. The table describes the intended allocation of work, not a record of completed contributions.
+## 8. Project Links and Documentation
 
-## Project tracking
+- **YouTrack project board:** [TerraGuard GIS — YouTrack](https://242226.youtrack.cloud/agiles/204-1/current)
+- **Project documentation:** [TerraGuard GIS academic report](docs/TerraGuard_GIS_Report_v4.docx)
 
-[YouTrack project board](https://242226.youtrack.cloud/agiles/204-1/current)
+The academic report contains research, initial requirements, architecture, interface sketches, and the evaluation plan. The documentation link requires `docs/TerraGuard_GIS_Report_v4.docx` to be present in the repository.
 
-## Next development steps
+## 9. Setup, Running, and Testing
 
-Validate the proposed workflow with relevant representatives, review the requirements and technical baseline, and implement a complete source-to-storage-to-reuse record. Observation import, rule explanations and their tests can then be added before the planned baseline comparison.
+> **Not available yet:** This repository is currently in the documentation/design phase. There is no runnable application or verified installation and test commands to provide.
 
-Detailed assignments, dates and task status are left to the team in YouTrack.
+### Setup
+
+No installation is required to read the project documentation. When application code is added, this section will contain the verified prerequisites, dependency installation commands, environment configuration, and PostgreSQL/PostGIS database initialization steps.
+
+### Running the Application
+
+The application cannot be launched at the current stage. Once a working version exists, this section will provide the exact commands to start the database, backend, and frontend and the address where the application can be accessed.
+
+### Testing
+
+Automated tests cannot yet be executed. Once runnable code and tests are available, this section will provide exact test commands and describe the test environment. The planned checks include geometry and volume calculations, CSV validation, material-operation consistency, rule evaluation, access control, and audit history. User workflow evaluation will be documented separately.
+
+## 10. Notes
+
+The prototype will distinguish measured observations from estimates and synthetic test data. Soil-related alerts will require suitable measurement context and reviewed rules; they will not be presented as guaranteed environmental conclusions.
+
+For task assignments and progress updates, refer to the [YouTrack project board](https://242226.youtrack.cloud/agiles/204-1/current).
