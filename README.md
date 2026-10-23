@@ -29,7 +29,7 @@ Construction projects may require topsoil to be removed, stored, and reused. Tra
 
 TerraGuard GIS aims to investigate this challenge and provide a single map-based workflow for maintaining traceable soil records. The extent of the problem and specific user needs will be validated through further research with potential users.
 
-## 2. Target Users
+## 2. Target Users!
 
 | Target user | Intended use |
 | --- | --- |
