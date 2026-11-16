@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TerraGuard GIS</title>
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">◈</span>
+        <div>
+          TerraGuard
+          <span class="brand-sub">GIS PLATFORM</span>
+        </div>
+      </div>
+
+      <div class="workspace-label">WORKSPACE</div>
+
+      <nav>
+        <a href="#overview" data-nav="overview">
+          Overview
+        </a>
+        <a href="#map" data-nav="map">
+          GIS Map
+        </a>
+        <a href="#monitoring" data-nav="monitoring">
+          Soil Monitoring
+        </a>
+        <a href="#restoration" data-nav="restoration">
+          Preservation &amp; Restoration
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="mission-icon">♧</div>
+        <strong>Preserving soil.<br>Protecting tomorrow.</strong>
+        <p>From the first measurement to restored land.</p>
+        <div class="local-mode">
+          <span class="live-dot"></span>
+          Local workspace
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main workspace -->
+    <div class="workspace">
+
+      <header class="topbar">
+        <div class="topbar-start">
+          <button
+            id="menu-toggle"
+            class="mobile-menu"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+
+          <div class="breadcrumb">
+            <span>Workspace</span>
+            <strong id="section-name">Overview</strong>
+          </div>
+        </div>
+
+        <div class="topbar-end">
+          <span class="demo-badge">Demo Data</span>
+          <span>Astana, Kazakhstan</span>
+        </div>
+      </header>
+
+      <div class="project-bar">
+        <div class="project-select-wrap">
+          <select id="project-select">
+            <option>Loading projects...</option>
+          </select>
+        </div>
+      </div>
+
+      <main id="content"></main>
+
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

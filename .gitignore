@@ -1,0 +1,14 @@
+
+# Node.js dependencies
+node_modules/
+
+# Vite production build
+dist/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
