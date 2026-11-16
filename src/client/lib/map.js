@@ -7,6 +7,33 @@ import { escape, statusColors } from './ui.js';
 window.L = L;
 let drawPromise;
 
+
+const testSamplingPoints = [
+  {
+    id: 'SP-001',
+    name: 'Sampling Point 1',
+    lat: 51.1058,
+    lng: 71.4005,
+    measurements: {
+      ph: 6.5,
+      moisture: 24,
+      organicMatter: 3.2
+    }
+  },
+  {
+    id: 'SP-002',
+    name: 'Sampling Point 2',
+    lat: 51.1062,
+    lng: 71.4010,
+    measurements: {
+      ph: 7.1,
+      moisture: 19,
+      organicMatter: 2.8
+    }
+  }
+];
+
+
 export async function createMap(element, features, { onSelect, interactive = true } = {}) {
   if (interactive) await (drawPromise ||= import('leaflet-draw'));
   const map = L.map(element, { zoomControl: interactive, scrollWheelZoom: interactive, doubleClickZoom: interactive, dragging: true, attributionControl: true }).setView([51.1055, 71.400], 15);
@@ -49,6 +76,44 @@ export async function createMap(element, features, { onSelect, interactive = tru
     layerGroup.addData({ type: 'FeatureCollection', features: nextFeatures });
   }
   setFeatures(features);
+
+  // TG-9: Sampling points layer
+  const samplingLayer = L.layerGroup().addTo(map);
+
+  function setSamplingPoints(points = []) {
+    samplingLayer.clearLayers();
+
+    points.forEach((point) => {
+      const { ph, moisture, organicMatter } = point.measurements;
+
+      const marker = L.circleMarker(
+        [point.lat, point.lng],
+        {
+          radius: 8,
+          color: '#ffffff',
+          weight: 2,
+          fillColor: '#2563eb',
+          fillOpacity: 0.95
+        }
+      );
+
+      marker.bindPopup(`
+        <div class="sampling-popup">
+          <strong>${escape(point.name)}</strong>
+          <p>Point ID: ${escape(point.id)}</p>
+          <hr>
+          <p>pH: ${escape(String(ph))}</p>
+          <p>Moisture: ${escape(String(moisture))}%</p>
+          <p>Organic matter: ${escape(String(organicMatter))}%</p>
+        </div>
+      `);
+
+      marker.addTo(samplingLayer);
+    });
+  }
+
+  setSamplingPoints(testSamplingPoints);
+
   const fullBounds = layerGroup.getBounds();
   function fit() {
     if (fullBounds.isValid()) map.fitBounds(fullBounds, { padding: interactive ? [45, 45] : [30, 30], maxZoom: 16 });
@@ -63,6 +128,7 @@ export async function createMap(element, features, { onSelect, interactive = tru
     map,
     fit,
     setFeatures,
+    setSamplingPoints,
     select(id) {
       layerGroup.eachLayer((layer) => {
         const selected = layer.feature.properties.id === id;
